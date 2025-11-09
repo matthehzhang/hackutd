@@ -11,9 +11,15 @@ public partial class SerialManager : Node
 
 		try
 		{
-			port = new SerialPort("COM11", 115200);
+			port = new SerialPort("COM12", 115200);
 			port.Open();
 			GD.Print("✅ Serial connected on COM11");
+			
+			while (port.IsOpen && port.BytesToRead > 0)
+			{
+				string line = port.ReadLine();
+				GD.Print("From ESP: ", line);
+			}
 		}
 		catch (System.Exception e)
 		{
