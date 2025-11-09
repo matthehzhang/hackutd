@@ -70,4 +70,3 @@ func remove_quest(quest_name:String) -> bool:
 		return true
 	else:
 		return false
-
