@@ -30,3 +30,4 @@ res://scenes/levels/Battle.gd
 res://scenes/levels/SerialManager.gd
 res://scenes/levels/SerialManager.cs
 res://scenes/levels/outside.gd
+res://scenes/levels/house_inside.gd

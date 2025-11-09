@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Top Down Action RPG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0184666b77a95888f80a915d353adc1231ed4c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb1dc1f038bbceaf56af6899d97b2183b273f794")]
 [assembly: System.Reflection.AssemblyProductAttribute("Top Down Action RPG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Top Down Action RPG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

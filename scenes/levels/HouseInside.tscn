@@ -1,12 +1,14 @@
-[gd_scene load_steps=13 format=3 uid="uid://ddfr0xxi2hppu"]
+[gd_scene load_steps=15 format=3 uid="uid://ddfr0xxi2hppu"]
 
 [ext_resource type="Texture2D" uid="uid://bijef2y1b822l" path="res://textures/house_inside.png" id="1"]
+[ext_resource type="Script" uid="uid://bji4lk6evsrea" path="res://scenes/levels/house_inside.gd" id="1_bfufd"]
 [ext_resource type="PackedScene" path="res://scenes/props/Table.tscn" id="3"]
 [ext_resource type="Script" uid="uid://bkpv44hm1pafh" path="res://scenes/misc/Exit.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="7"]
 [ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="8"]
+[ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="9_gvgwj"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "idle"
@@ -52,6 +54,7 @@ size = Vector2(1412.42, 336.798)
 size = Vector2(1378.44, 314.398)
 
 [node name="HouseInside" type="Node" groups=["fixed_camera"]]
+script = ExtResource("1_bfufd")
 
 [node name="house_inside" type="Sprite2D" parent="."]
 texture = ExtResource("1")
@@ -125,5 +128,8 @@ polygon = PackedVector2Array(-859.39, 362.047, -856.453, 670.362, 855.425, 676.2
 vertex_colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.831373, 0, 0, 0, 0.839216, 0, 0, 0, 0)
 
 [node name="UI" parent="." instance=ExtResource("7")]
+
+[node name="SerialManager" type="Node" parent="."]
+script = ExtResource("9_gvgwj")
 
 [editable path="house_inside/Dadbug"]
