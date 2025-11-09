@@ -22,3 +22,4 @@ res://scenes/characters/Player.gd
 res://scenes/misc/Healthbar.tscn
 res://scenes/misc/Healthbar.gd
 res://scenes/levels/sprite_2d.gd
+res://scenes/levels/Menu.gd
