@@ -1,9 +1,11 @@
+Node2D
+AnimatedSprite2D
+AnimationPlayer
 CharacterBody2D
 Label
 Button
 Control
 CanvasLayer
-AnimationPlayer
 Sprite2D
 Node
 Boss0
@@ -11,4 +13,3 @@ CollisionShape2D
 Enemy
 TileMap
 CanvasModulate
-Camera2D

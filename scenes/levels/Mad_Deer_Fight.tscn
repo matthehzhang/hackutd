@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7rsrpqmxa482"]
+
+[ext_resource type="Script" uid="uid://baaqychne4lfw" path="res://scenes/levels/Mad_Deer_Fight.gd" id="1_3bhjj"]
+
+[node name="MadDeerFight" type="Node2D"]
+script = ExtResource("1_3bhjj")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0q1r12t44f0b"]
+
+[ext_resource type="Script" uid="uid://cskvy5fk801c7" path="res://scenes/levels/Panther_Fight.gd" id="1_fxr0u"]
+
+[node name="PantherFight" type="Node2D"]
+script = ExtResource("1_fxr0u")

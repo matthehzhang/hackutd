@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://p6vxbotrhbs6"]
+[gd_scene load_steps=5 format=3 uid="uid://duivq1ed82r0d"]
 
-[ext_resource type="Script" uid="uid://bk6l4f8f7r3w0" path="res://scenes/levels/fox_fight.gd" id="1_8woks"]
+[ext_resource type="Script" uid="uid://bk6l4f8f7r3w0" path="res://scenes/levels/Fox_Fight.gd" id="1_8woks"]
 [ext_resource type="Texture2D" uid="uid://bq8d10ff8fl5m" path="res://textures/background/background.jpg" id="1_37jcr"]
 [ext_resource type="Texture2D" uid="uid://x0w5wbpsvs0p" path="res://textures/pj/frames/attack_up0002.png" id="3_kt1dm"]
 [ext_resource type="Texture2D" uid="uid://dgwno0a8qdls8" path="res://icon.png" id="4_8o1oe"]
