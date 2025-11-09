@@ -13,3 +13,4 @@ res://scenes/misc/Stats.gd
 res://singletons/Globals.gd
 res://textures/props/forest_tileset.tres
 res://scenes/levels/HouseInside.tscn
+res://scenes/levels/Menu.tscn

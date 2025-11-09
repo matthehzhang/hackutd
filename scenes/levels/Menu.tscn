@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dv86fjxyfb7t5"]
 
-[ext_resource type="FontFile" path="res://fonts/dialog.tres" id="1"]
+[ext_resource type="FontFile" uid="uid://drwpb3u26vnpm" path="res://fonts/dialog.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://cb2u7ijtdnnyg" path="res://textures/menu/game_title.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://ck0bibv77mxh2" path="res://textures/menu/bg.png" id="3"]
 [ext_resource type="Script" uid="uid://bujdjtd24da3g" path="res://scenes/levels/Menu.gd" id="4"]
@@ -10,6 +10,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 focus_neighbor_left = NodePath("quit")
 focus_neighbor_top = NodePath("continue")
 focus_neighbor_right = NodePath("credits")
@@ -95,6 +97,7 @@ focus_neighbor_left = NodePath("../quit")
 focus_neighbor_top = NodePath("../continue")
 focus_neighbor_right = NodePath("../quit")
 focus_neighbor_bottom = NodePath("../new_game")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1")
 text = "Controls"
 flat = true
@@ -111,6 +114,7 @@ focus_neighbor_left = NodePath("../controls")
 focus_neighbor_top = NodePath("../continue")
 focus_neighbor_right = NodePath("../controls")
 focus_neighbor_bottom = NodePath("../new_game")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1")
 text = "Quit"
 flat = true
