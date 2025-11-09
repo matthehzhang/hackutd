@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0q1r12t44f0b"]
+[gd_scene load_steps=7 format=3 uid="uid://d0q1r12t44f0b"]
 
 [ext_resource type="Script" uid="uid://cskvy5fk801c7" path="res://scenes/levels/Panther_Fight.gd" id="1_fxr0u"]
 [ext_resource type="Texture2D" uid="uid://bk6vwek1xs3i0" path="res://textures/pj/frames/panther.png" id="2_txhbe"]
 [ext_resource type="Texture2D" uid="uid://cahcbulynrksc" path="res://textures/pj/frames/house.jpg" id="3_fotij"]
 [ext_resource type="Texture2D" uid="uid://5vhvshbs8vt6" path="res://textures/pj/frames/poyo_attack_idle.png" id="4_72rya"]
 [ext_resource type="PackedScene" uid="uid://b736ohr7nhj2e" path="res://scenes/misc/Dialog_box.tscn" id="5_fotij"]
+[ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="6_72rya"]
 
 [node name="PantherFight" type="Node2D"]
 script = ExtResource("1_fxr0u")
@@ -62,3 +63,6 @@ offset_left = 8.0
 offset_top = 399.0
 offset_right = 1146.0
 offset_bottom = 697.0
+
+[node name="SerialManager" type="Node" parent="."]
+script = ExtResource("6_72rya")

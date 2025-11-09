@@ -7,6 +7,8 @@ extends Node2D
 #@onready var player_health_bar = $UI/PlayerHealthBar
 @onready var battle_text = $UI/BattleText
 
+var serial_manager
+
 # QTE variables
 var qte_active = false
 var qte_start_time = 0.0
@@ -29,6 +31,8 @@ var defending = false
 
 func _ready():
 	# For debugging
+	serial_manager = get_node("SerialManager")
+	
 	print("battle started")
 	# Load stats from Globals
 	player_hp = 100
@@ -38,7 +42,7 @@ func _ready():
 	enemy_name = "Panther"
 	enemy_hp = 60
 	enemy_max_hp = 60
-	enemy_atk = 10
+	enemy_atk = 30
 	
 	# Setup UI
 	#player_health_bar.max_value = player_max_hp
@@ -61,6 +65,8 @@ func fight() -> void:
 	
 	if enemy_name == "Panther": 
 		show_message("Jump!")
+		serial_manager.SendMessage("ATTACK1")
+		serial_manager.SendMessage("")
 		# line to send code to C# to then send serial code to active Jump LED wave
 	if enemy_name == "Fox": 
 		show_message("fox attack")
@@ -78,6 +84,9 @@ func fight() -> void:
 		shake_sprite(player)
 		player_hp -= enemy_atk
 		player_hp = max(0, player_hp)
+	else:
+		show_message("Dodge!")
+		print("Dodge!")
 	
 	#player_health_bar.value = player_hp
 	
