@@ -4,13 +4,12 @@ class_name Player
 
 """
 This implements a very rudimentary state machine. There are better implementations
-in the AssetLib if you want to make something more complex. Also it shares code with Enemy.gd
-and probably both should extend some parent script
+in the AssetLib if you want to make something more complex.
 """
 
-@export var WALK_SPEED: int = 350 # pixels per second
-@export var ROLL_SPEED: int = 1000 # pixels per second
-@export var hitpoints: int = 3
+@export var WALK_SPEED: int = 150 # pixels per second
+@export var ROLL_SPEED: int = 300 # pixels per second
+@export var hitpoints: int = 20
 
 var linear_vel = Vector2()
 var roll_direction = Vector2.DOWN
@@ -39,8 +38,38 @@ func _ready():
 			Dialogs.dialog_started.connect(_on_dialog_started) == OK and
 			Dialogs.dialog_ended.connect(_on_dialog_ended) == OK ):
 		printerr("Error connecting to dialog system")
+		
+	setup_camera()	
 	pass
 
+func setup_camera():
+	# Find the current room node
+	var current_room = get_parent()  # Assumes player is child of room
+	
+	# Check if this room should have a fixed camera
+	if current_room.is_in_group("fixed_camera"):
+		# Center camera on room
+		var room_center = get_room_center(current_room)
+		# Detach camera from player movement
+		$Camera2D.set_as_top_level(true)
+		$Camera2D.global_position = room_center
+		$Camera2D.position_smoothing_enabled = false
+		# Detach camera from player movement
+		
+	else:
+		# Camera follows player normally
+		$Camera2D.set_as_top_level(false)
+		$Camera2D.position_smoothing_enabled = true
+		$Camera2D.position = Vector2.ZERO
+
+func get_room_center(room):
+	# Find a node marked as the room center, or use a default
+	var center_markers = room.get_node("CameraCenter") if room.has_node("CameraCenter") else null
+	if center_markers:
+		return center_markers.global_position
+	else:
+		# Fallback: estimate from room size (adjust these values)
+		return Vector2(0,0)
 
 func _physics_process(_delta):
 	
