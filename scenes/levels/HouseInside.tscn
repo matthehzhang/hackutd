@@ -102,12 +102,13 @@ rotation = -1.13377
 shape = SubResource("2")
 
 [node name="exit" type="Area2D" parent="."]
-position = Vector2(8.40967, 795.39)
+position = Vector2(8.120605, 688.2666)
 script = ExtResource("4")
 to_scene = "res://scenes/levels/Outside.tscn"
 spawnpoint = "house_outside"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
+position = Vector2(-2.1206055, -154.2666)
 shape = SubResource("3")
 
 [node name="Character" parent="." instance=ExtResource("5")]
