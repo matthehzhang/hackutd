@@ -58,17 +58,11 @@ func show_message(text: String):
 func fight() -> void: 
 	var success = false
 	
-	if enemy_name == "Panther": 
-		show_message("Jump!")
-		# line to send code to C# to then send serial code to active Jump LED wave
 	if enemy_name == "Fox": 
-		show_message("fox attack")
-	if enemy_name == "The Mad Deer": 
-		show_message("Think fast and follow along!")
-		# line to send code to C# to then send serial code to activate arrows 
-		# serial code should randomly choose one of the codes because ESP guy will make 
-		# 5 diff variations and we will cycle them randomly
+		show_message("Block when he gets close!")
+	
 	success = await start_qte()
+	show_message("Wait...")
 	qte_max_time -= .01
 		
 	if not success: 
@@ -166,7 +160,7 @@ func lose_battle():
 
 func return_to_scene(won: bool):
 	# Return to the scene you came from
-	get_tree().change_scene_to_file(Globals.battle_return_scene)
+	get_tree().change_scene_to_file("res://scenes/levels/Raven.tscn")
 
 # Simple screen shake effect
 func shake_sprite(sprite: Node):

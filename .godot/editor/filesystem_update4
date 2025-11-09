@@ -23,3 +23,7 @@ res://scenes/misc/Healthbar.tscn
 res://scenes/misc/Healthbar.gd
 res://scenes/levels/sprite_2d.gd
 res://scenes/levels/Menu.gd
+res://scenes/levels/Cave.gd
+res://scenes/levels/Mountain.gd
+res://scenes/levels/Raven.gd
+res://scenes/levels/Mountain.tscn
