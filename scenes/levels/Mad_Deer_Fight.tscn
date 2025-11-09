@@ -1,6 +1,58 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7rsrpqmxa482"]
+[gd_scene load_steps=5 format=3 uid="uid://b7rsrpqmxa482"]
 
 [ext_resource type="Script" uid="uid://baaqychne4lfw" path="res://scenes/levels/Mad_Deer_Fight.gd" id="1_3bhjj"]
+[ext_resource type="Texture2D" uid="uid://bnnqexda7pijb" path="res://textures/pj/frames/mountain.jpg" id="2_pggh1"]
+[ext_resource type="Texture2D" uid="uid://5vhvshbs8vt6" path="res://textures/pj/frames/poyo_attack_idle.png" id="3_kkcmk"]
+[ext_resource type="Texture2D" uid="uid://bqb168be3ydqk" path="res://textures/pj/frames/maddeer.png" id="4_onkwn"]
 
 [node name="MadDeerFight" type="Node2D"]
 script = ExtResource("1_3bhjj")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(586, 328)
+scale = Vector2(0.61, 0.61)
+texture = ExtResource("2_pggh1")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(591, 672)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("3_kkcmk")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+
+[node name="Enemy" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+position = Vector2(612, 246)
+scale = Vector2(0.395, 0.395)
+texture = ExtResource("4_onkwn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PlayerActions" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="UI/PlayerActions"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BattleText" type="Label" parent="UI"]
+z_index = 3
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.035
+offset_left = 54.0
+offset_top = 56.0
+offset_right = 53.68
+offset_bottom = 78.32
+scale = Vector2(2.02, 2.02)
+theme_override_font_sizes/font_size = 32

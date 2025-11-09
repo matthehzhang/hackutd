@@ -1,32 +1,64 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0q1r12t44f0b"]
+[gd_scene load_steps=6 format=3 uid="uid://d0q1r12t44f0b"]
 
 [ext_resource type="Script" uid="uid://cskvy5fk801c7" path="res://scenes/levels/Panther_Fight.gd" id="1_fxr0u"]
 [ext_resource type="Texture2D" uid="uid://bk6vwek1xs3i0" path="res://textures/pj/frames/panther.png" id="2_txhbe"]
 [ext_resource type="Texture2D" uid="uid://cahcbulynrksc" path="res://textures/pj/frames/house.jpg" id="3_fotij"]
 [ext_resource type="Texture2D" uid="uid://5vhvshbs8vt6" path="res://textures/pj/frames/poyo_attack_idle.png" id="4_72rya"]
+[ext_resource type="PackedScene" uid="uid://b736ohr7nhj2e" path="res://scenes/misc/Dialog_box.tscn" id="5_fotij"]
 
 [node name="PantherFight" type="Node2D"]
 script = ExtResource("1_fxr0u")
 
-[node name="BattleText" type="Label" parent="."]
-offset_left = 34.0
-offset_top = 24.0
-offset_right = 74.0
-offset_bottom = 47.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Enemy" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(913, 179)
-scale = Vector2(0.67, 0.67)
-texture = ExtResource("2_txhbe")
-
-[node name="House" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(575.5, 326.5)
 scale = Vector2(0.5984375, 0.59166664)
 texture = ExtResource("3_fotij")
 
-[node name="Player" type="Sprite2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(176, 477.00003)
 scale = Vector2(0.65, 0.65)
 texture = ExtResource("4_72rya")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+
+[node name="Enemy" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+z_index = 1
+position = Vector2(782.0001, 294)
+scale = Vector2(1.36, 1.36)
+texture = ExtResource("2_txhbe")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PlayerActions" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="UI/PlayerActions"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BattleText" type="Label" parent="UI"]
+z_index = 6
+offset_left = 34.0
+offset_top = 24.0
+offset_right = 74.0
+offset_bottom = 47.0
+scale = Vector2(2.03, 2.03)
+metadata/_edit_use_anchors_ = true
+
+[node name="Dialog_box" parent="." instance=ExtResource("5_fotij")]
+z_index = 2
+offset_left = 8.0
+offset_top = 399.0
+offset_right = 1146.0
+offset_bottom = 697.0

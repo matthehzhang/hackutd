@@ -17,3 +17,8 @@ res://scenes/levels/HouseInside.tscn
 res://scenes/levels/Fox_Fight.gd
 res://scenes/levels/Mad_Deer_Fight.gd
 res://scenes/levels/Panther_Fight.gd
+res://scenes/misc/Dialog_box.tscn
+res://scenes/characters/Player.gd
+res://scenes/misc/Healthbar.tscn
+res://scenes/misc/Healthbar.gd
+res://scenes/levels/sprite_2d.gd
