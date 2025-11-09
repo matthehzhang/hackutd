@@ -1,4 +1,2 @@
+res://default_bus_layout.tres
 res://default_env.tres
-res://singletons/Quest.gd
-res://scenes/characters/DespawnFx.gd
-res://scenes/levels/Menu.tscn
