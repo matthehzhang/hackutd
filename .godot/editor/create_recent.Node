@@ -7,7 +7,6 @@ AnimationPlayer
 Sprite2D
 Node
 Boss0
-CharacterBody2D
 CollisionShape2D
 Enemy
 TileMap
