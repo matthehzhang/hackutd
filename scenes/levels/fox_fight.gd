@@ -90,6 +90,8 @@ func fight() -> void:
 	# Auto attack back
 	enemy_hp -= player_atk
 	enemy_hp = max(0, enemy_hp)
+	shake_sprite(enemy)
+	get_tree().create_timer(.5).timeout
 	
 	if enemy_hp <= 0: 
 		win_battle()
@@ -129,7 +131,7 @@ func win_battle():
 	if enemy_name == "Panther": 
 		dialogue = "Hero...thank you for saving my life! But you still have a journey ahead of you. The Mad Deer will stop at nothing to annihilate this world. Head East: there is a cave where you shall continue your path."
 	if enemy_name == "Fox": 
-		dialogue = ""
+		dialogue = "I don't know what came over me! I'm so upset I hurt Raven, one of my closest friends. Make sure you defeat the terrible deer."
 	if enemy_name == "The Mad Deer": 
 		dialogue = "Fine. You win. But don't expect this to end. You heroes trample on the lives of people like me, without ever questioning why we turned to this life in the first place."
 		
