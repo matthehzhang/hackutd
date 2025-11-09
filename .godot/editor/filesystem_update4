@@ -15,3 +15,5 @@ res://scenes/props/House.tscn
 res://scenes/levels/Outside.tscn
 res://scenes/levels/HouseInside.tscn
 res://scenes/levels/Fox_Fight.gd
+res://scenes/levels/Mad_Deer_Fight.gd
+res://scenes/levels/Panther_Fight.gd

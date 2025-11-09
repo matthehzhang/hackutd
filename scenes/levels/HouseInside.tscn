@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://ddfr0xxi2hppu"]
 
-[ext_resource type="Texture2D" uid="uid://bijef2y1b822l" path="res://textures/house_inside.png" id="1"]
 [ext_resource type="Script" uid="uid://b4ioplwjrx00l" path="res://scenes/levels/HouseInside.gd" id="1_pccjs"]
+[ext_resource type="Texture2D" uid="uid://cahcbulynrksc" path="res://textures/pj/frames/house.jpg" id="2_pccjs"]
 [ext_resource type="Script" uid="uid://bkpv44hm1pafh" path="res://scenes/misc/Exit.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
@@ -17,7 +17,7 @@ size = Vector2(1378.44, 314.398)
 script = ExtResource("1_pccjs")
 
 [node name="house_inside" type="Sprite2D" parent="."]
-texture = ExtResource("1")
+texture = ExtResource("2_pccjs")
 
 [node name="walls" type="StaticBody2D" parent="."]
 
