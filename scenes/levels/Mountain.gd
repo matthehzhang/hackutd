@@ -1,32 +1,21 @@
 extends Node2D
 
 @export var auto_trigger_battle = true
-@export var enemy_name = "Panther"
-@export var enemy_health = 60
-@export var enemy_attack = 10
+@export var enemy_name = "The Mad Deer"
+@export var enemy_health = 150
+@export var enemy_attack = 30
 
 var battle_triggered = false
-var serial_manager
 
 func _ready():
-	serial_manager = get_node("SerialManager")
-	serial_manager.SendMessage("Hello ESP32!")
-	serial_manager.SendMessage("HOUSE")
 	# If you have a dialog system, connect to it
 	if Dialogs and not battle_triggered:
 		# Wait a moment before starting cutscene
 		# Debugging purposes
 		print("started")
-		await get_tree().create_timer(3).timeout
+		await get_tree().create_timer(2.0).timeout
 		if auto_trigger_battle:
 			start_encounter()
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	var msg = serial_manager.ReadMessage()
-	if msg != "":
-		print("Received from ESP:", msg)
-	pass
 
 func start_encounter():
 	if battle_triggered:
@@ -46,7 +35,7 @@ func start_encounter():
 func show_pre_battle_dialogue():
 	# If you have a Dialogs system, use it here
 	# Example dialogue lines:
-	var dialogue = "H...h..ehehehe...     Is that cat flesh I smell? Dinner time! Dinner time! DINNER!"
+	var dialogue = "Die."
 
 	
 	# You'll need to adapt this to YOUR dialog system
@@ -63,4 +52,4 @@ func start_battle():
 	### REPLACE
 	
 	# Transition to battle scene
-	get_tree().change_scene_to_file("res://scenes/levels/Panther_Fight.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/Mad_Deer_Fight.tscn")

@@ -1,3 +1,30 @@
-[gd_scene load_steps=0 format=3 uid="uid://8uyfh2gobn2r"]
+[gd_scene load_steps=5 format=3 uid="uid://8uyfh2gobn2r"]
+
+[ext_resource type="Script" uid="uid://bgln87r1533hn" path="res://scenes/levels/Mountain.gd" id="1_urvnr"]
+[ext_resource type="Texture2D" uid="uid://bnnqexda7pijb" path="res://textures/pj/frames/mountain.jpg" id="2_bu8yr"]
+[ext_resource type="Texture2D" uid="uid://5vhvshbs8vt6" path="res://textures/pj/frames/poyo_attack_idle.png" id="3_6bc62"]
+[ext_resource type="PackedScene" uid="uid://b736ohr7nhj2e" path="res://scenes/misc/Dialog_box.tscn" id="4_bu8yr"]
 
 [node name="Mountain" type="Node2D"]
+script = ExtResource("1_urvnr")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(586, 328)
+scale = Vector2(0.61, 0.61)
+texture = ExtResource("2_bu8yr")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(591, 672)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("3_6bc62")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+
+[node name="Dialog_box" parent="." instance=ExtResource("4_bu8yr")]
+z_index = 2
+offset_left = 8.0
+offset_top = 399.0
+offset_right = 1146.0
+offset_bottom = 697.0

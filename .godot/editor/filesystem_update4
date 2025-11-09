@@ -6,3 +6,11 @@ res://scenes/levels/cave.gd
 res://scenes/levels/SerialManager.cs
 res://scenes/levels/Panther_Fight.tscn
 res://scenes/levels/Panther_Fight.gd
+res://scenes/characters/Player.gd
+res://scenes/levels/HouseInside.gd
+res://scenes/levels/Mad_Deer_Fight.gd
+res://scenes/misc/Dialog_box.tscn
+res://scenes/misc/Healthbar.gd
+res://scenes/misc/Healthbar.tscn
+res://scenes/levels/fox_fight.gd
+res://scenes/levels/Menu.gd

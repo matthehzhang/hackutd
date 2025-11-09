@@ -36,6 +36,13 @@ scale = Vector2(0.4, 0.4)
 character_name = "Professor Panik"
 dialogs = ["Hello young hero! What a lovely sword you have there...it looks perfect for fighting monsters!", "You might've heard already, but strange things have been happening recently.", "THE MAD DEER has infected animals across our town with his curse.", "Friends, lovers, parents and children. They've turned their fangs against each other. The smell of blood lingers.", "This town needs you! Here, take this potion and cure our friends of their disease! ", "Head north: there have been reports of screams coming from the old abandoned house..."]
 
+[node name="Tooltip" type="Label" parent="level/Professor Panik"]
+offset_left = -77.49999
+offset_top = -119.99999
+offset_right = 76.50001
+offset_bottom = -96.99999
+text = "Press \"E\" to interact"
+
 [node name="Character" parent="level" instance=ExtResource("8")]
 z_index = 10
 position = Vector2(1004, 997)

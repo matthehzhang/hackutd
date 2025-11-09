@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Label
+>>>>>>> design
 AnimatedSprite2D
 Sprite2D
 Exit
@@ -17,7 +21,6 @@ Node2D
 Player
 Node2D
 Enemy
-Label
 AnimationPlayer
 >>>>>>> origin/design
 CharacterBody2D

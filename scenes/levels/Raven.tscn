@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqfhunndi1x0r"]
+[gd_scene load_steps=7 format=3 uid="uid://bqfhunndi1x0r"]
 
+[ext_resource type="Script" uid="uid://douqj5306gwbb" path="res://scenes/levels/Raven.gd" id="1_mf1x6"]
 [ext_resource type="Texture2D" uid="uid://h23khfodi732" path="res://textures/pj/frames/raven1.png" id="1_rxpdk"]
 [ext_resource type="Texture2D" uid="uid://bprop3cpju8a1" path="res://textures/pj/frames/raven2.png" id="2_tgsmt"]
 [ext_resource type="Texture2D" uid="uid://bgwnykmbaiily" path="res://textures/pj/frames/raven3.png" id="3_mf1x6"]
@@ -23,8 +24,11 @@ animations = [{
 }]
 
 [node name="Raven" type="Node2D"]
+script = ExtResource("1_mf1x6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(581, 327.00003)
+scale = Vector2(0.62, 0.62)
 sprite_frames = SubResource("SpriteFrames_1batj")
-frame_progress = 0.3416675
+frame_progress = 0.34157094
 script = ExtResource("4_tgsmt")
