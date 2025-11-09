@@ -108,6 +108,7 @@ to_scene = "res://scenes/levels/Outside.tscn"
 spawnpoint = "house_outside"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
+position = Vector2(16.59033, -241.39001)
 shape = SubResource("3")
 
 [node name="Character" parent="." instance=ExtResource("5")]

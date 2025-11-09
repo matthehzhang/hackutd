@@ -6,3 +6,10 @@ res://scenes/characters/DespawnFx.gd
 res://scenes/characters/Player.gd
 res://scenes/misc/Healthbar.tscn
 res://singletons/Quest.gd
+res://scenes/characters/Enemy.gd
+res://scenes/misc/Dialog_box.tscn
+res://scenes/misc/Healthbar.gd
+res://scenes/misc/Stats.gd
+res://singletons/Globals.gd
+res://textures/props/forest_tileset.tres
+res://scenes/levels/HouseInside.tscn
