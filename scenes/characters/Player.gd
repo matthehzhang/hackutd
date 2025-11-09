@@ -8,9 +8,8 @@ in the AssetLib if you want to make something more complex.
 """
 
 @export var WALK_SPEED: int = 150 # pixels per second
-@export var ROLL_SPEED: int = 300 # pixels per second
-@export var hitpoints: int = 20
-
+@export var hitpoints: int = 100
+@export var damage: int = 10
 var linear_vel = Vector2()
 var roll_direction = Vector2.DOWN
 
@@ -23,7 +22,7 @@ var despawn_fx = preload("res://scenes/misc/DespawnFX.tscn")
 var anim = ""
 var new_anim = ""
 
-enum { STATE_BLOCKED, STATE_IDLE, STATE_WALKING, STATE_ATTACK, STATE_ROLL, STATE_DIE, STATE_HURT }
+enum { STATE_BLOCKED, STATE_IDLE, STATE_WALKING, STATE_ATTACK, STATE_DIE, STATE_HURT }
 
 var state = STATE_IDLE
 
@@ -86,23 +85,9 @@ func _physics_process(_delta):
 					Input.is_action_pressed("move_up")
 				):
 					state = STATE_WALKING
-			if Input.is_action_just_pressed("attack"):
-				state = STATE_ATTACK
-			if Input.is_action_just_pressed("roll"):
-				state = STATE_ROLL
-				roll_direction = Vector2(
-						- int( Input.is_action_pressed("move_left") ) + int( Input.is_action_pressed("move_right") ),
-						-int( Input.is_action_pressed("move_up") ) + int( Input.is_action_pressed("move_down") )
-					).normalized()
-				_update_facing()
 			new_anim = "idle_" + facing
 			pass
 		STATE_WALKING:
-			if Input.is_action_just_pressed("attack"):
-				state = STATE_ATTACK
-			if Input.is_action_just_pressed("roll"):
-				state = STATE_ROLL
-			
 			set_velocity(linear_vel)
 			move_and_slide()
 			linear_vel = velocity
@@ -121,7 +106,6 @@ func _physics_process(_delta):
 			target_speed *= WALK_SPEED
 			#linear_vel = linear_vel.linear_interpolate(target_speed, 0.9)
 			linear_vel = target_speed
-			roll_direction = linear_vel.normalized()
 			
 			_update_facing()
 			
@@ -133,19 +117,6 @@ func _physics_process(_delta):
 		STATE_ATTACK:
 			new_anim = "slash_" + facing
 			pass
-		STATE_ROLL:
-			if roll_direction == Vector2.ZERO:
-				state = STATE_IDLE
-			else:
-				set_velocity(linear_vel)
-				move_and_slide()
-				linear_vel = velocity
-				var target_speed = Vector2()
-				target_speed = roll_direction
-				target_speed *= ROLL_SPEED
-				#linear_vel = linear_vel.linear_interpolate(target_speed, 0.9)
-				linear_vel = target_speed
-				new_anim = "roll"
 		STATE_DIE:
 			new_anim = "die"
 		STATE_HURT:

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://bycx5snr304xk" path="res://scenes/characters/Enemy.tscn" id="4"]
-[ext_resource type="PackedScene" path="res://scenes/props/House.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://d1gup5fymhyr5" path="res://scenes/props/House.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="8"]
 [ext_resource type="TileSet" uid="uid://dou25et3eci8x" path="res://textures/props/forest_tileset.tres" id="8_e6b1c"]
@@ -41,13 +41,14 @@ scale = Vector2(0.4, 0.4)
 
 [node name="house" parent="level" instance=ExtResource("5")]
 z_index = 10
-position = Vector2(994, 508.99997)
-scale = Vector2(0.4, 0.4)
+y_sort_enabled = true
+position = Vector2(1082, 638)
+scale = Vector2(0.79, 0.79)
 to_scene = "res://scenes/levels/HouseInside.tscn"
 
 [node name="house_outside" type="Marker2D" parent="level/house" groups=["spawnpoints"]]
 z_index = 10
-position = Vector2(-2.12201, 173.199)
+position = Vector2(-273.41772, -88.60759)
 
 [node name="enemy" parent="level" instance=ExtResource("4")]
 z_index = 10

@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [gd_scene load_steps=5 format=3 uid="uid://dv86fjxyfb7t5"]
 
 [ext_resource type="FontFile" path="res://fonts/dialog.tres" id="1"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://5tmh8uof3iet"]
+
+[ext_resource type="FontFile" uid="uid://drwpb3u26vnpm" path="res://fonts/dialog.tres" id="1"]
+>>>>>>> abandoned-house
 [ext_resource type="Texture2D" uid="uid://cb2u7ijtdnnyg" path="res://textures/menu/game_title.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://ck0bibv77mxh2" path="res://textures/menu/bg.png" id="3"]
 [ext_resource type="Script" uid="uid://bujdjtd24da3g" path="res://scenes/levels/Menu.gd" id="4"]
@@ -78,6 +84,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.364706, 0.364706, 0.364706, 1)
 theme_override_colors/font_disabled_color = Color(0.780392, 0.780392, 0.780392, 1)
 theme_override_fonts/font = ExtResource("1")
+<<<<<<< HEAD
+=======
+disabled = true
+>>>>>>> abandoned-house
 text = "Continue"
 flat = true
 
