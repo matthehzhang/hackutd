@@ -4,6 +4,8 @@ extends Node
 var spawnpoint = ""
 var current_level = ""
 
+var player_won_battle = false
+
 func _ready():
 	RenderingServer.set_default_clear_color(Color.WHITE)
 
