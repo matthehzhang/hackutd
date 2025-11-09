@@ -4,8 +4,8 @@ extends HBoxContainer
 Connects to the player node and shows a health bar in the form of hearts
 """
 
-@onready var player: Node = $"../../Player"
-signal health_changed(new_hp: int)
+#@onready var player: Node = $"../../Player"
+#signal health_changed(new_hp: int)
 var hitpoints: int = 100
 
 var heart_scene = preload("res://scenes/misc/Heart.tscn")

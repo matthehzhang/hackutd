@@ -14,3 +14,5 @@ res://scenes/misc/Healthbar.gd
 res://scenes/misc/Healthbar.tscn
 res://scenes/levels/fox_fight.gd
 res://scenes/levels/Menu.gd
+res://scenes/levels/Mountain.gd
+res://scenes/levels/Raven.gd
