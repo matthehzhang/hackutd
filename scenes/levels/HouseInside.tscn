@@ -1,7 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://ddfr0xxi2hppu"]
+[gd_scene load_steps=13 format=3 uid="uid://ddfr0xxi2hppu"]
 
 [ext_resource type="Texture2D" uid="uid://bijef2y1b822l" path="res://textures/house_inside.png" id="1"]
-[ext_resource type="Script" uid="uid://b4ioplwjrx00l" path="res://scenes/levels/HouseInside.gd" id="1_lx1r1"]
 [ext_resource type="PackedScene" path="res://scenes/props/Table.tscn" id="3"]
 [ext_resource type="Script" uid="uid://bkpv44hm1pafh" path="res://scenes/misc/Exit.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="5"]
@@ -52,8 +51,7 @@ size = Vector2(1412.42, 336.798)
 [sub_resource type="RectangleShape2D" id="3"]
 size = Vector2(1378.44, 314.398)
 
-[node name="HouseInside" type="Node2D" groups=["fixed_camera"]]
-script = ExtResource("1_lx1r1")
+[node name="HouseInside" type="Node" groups=["fixed_camera"]]
 
 [node name="house_inside" type="Sprite2D" parent="."]
 texture = ExtResource("1")
@@ -104,13 +102,12 @@ rotation = -1.13377
 shape = SubResource("2")
 
 [node name="exit" type="Area2D" parent="."]
-position = Vector2(8.120605, 688.2666)
+position = Vector2(8.40967, 795.39)
 script = ExtResource("4")
 to_scene = "res://scenes/levels/Outside.tscn"
 spawnpoint = "house_outside"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
-position = Vector2(-2.1206055, -154.2666)
 shape = SubResource("3")
 
 [node name="Character" parent="." instance=ExtResource("5")]

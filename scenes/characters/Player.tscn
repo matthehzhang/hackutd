@@ -876,7 +876,6 @@ position = Vector2(0, -78.0211)
 shape = SubResource("18")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-z_index = 2
 zoom = Vector2(1.25, 1.25)
 
 [connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered"]

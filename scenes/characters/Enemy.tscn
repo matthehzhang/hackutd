@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://bycx5snr304xk"]
 
-[ext_resource type="Script" uid="uid://c8tvbx7w36mr5" path="res://scenes/characters/Enemy.gd" id="1"]
+[ext_resource type="Script" path="res://scenes/characters/Enemy.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dgmhft8dl1n3d" path="res://textures/pj/pj.png" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/misc/ItemSpawner.tscn" id="3"]
 
@@ -1158,22 +1158,22 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_we5lc"]
 _data = {
-&"die": SubResource("2"),
-&"hurt": SubResource("3"),
-&"idle_down": SubResource("4"),
-&"idle_left": SubResource("5"),
-&"idle_right": SubResource("6"),
-&"idle_up": SubResource("7"),
-&"reset": SubResource("8"),
-&"roll": SubResource("9"),
-&"slash_down": SubResource("10"),
-&"slash_left": SubResource("11"),
-&"slash_right": SubResource("12"),
-&"slash_up": SubResource("13"),
-&"walk_down": SubResource("14"),
-&"walk_left": SubResource("15"),
-&"walk_right": SubResource("16"),
-&"walk_up": SubResource("17")
+"die": SubResource("2"),
+"hurt": SubResource("3"),
+"idle_down": SubResource("4"),
+"idle_left": SubResource("5"),
+"idle_right": SubResource("6"),
+"idle_up": SubResource("7"),
+"reset": SubResource("8"),
+"roll": SubResource("9"),
+"slash_down": SubResource("10"),
+"slash_left": SubResource("11"),
+"slash_right": SubResource("12"),
+"slash_up": SubResource("13"),
+"walk_down": SubResource("14"),
+"walk_left": SubResource("15"),
+"walk_right": SubResource("16"),
+"walk_up": SubResource("17")
 }
 
 [sub_resource type="CapsuleShape2D" id="18"]
@@ -1199,7 +1199,7 @@ shape = SubResource("1")
 
 [node name="anims" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_we5lc")
+"": SubResource("AnimationLibrary_we5lc")
 }
 autoplay = "reset"
 

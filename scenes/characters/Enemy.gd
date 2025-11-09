@@ -9,6 +9,7 @@ and probably both should extend some parent script
 """
 
 @export var WALK_SPEED: int = 350
+@export var ROLL_SPEED: int = 1000
 @export var hitpoints: int = 3
 
 var despawn_fx = preload("res://scenes/misc/DespawnFX.tscn")
@@ -19,7 +20,7 @@ var linear_vel = Vector2()
 var anim = ""
 var new_anim = ""
 
-enum { STATE_IDLE, STATE_WALKING, STATE_ATTACK, STATE_DIE, STATE_HURT }
+enum { STATE_IDLE, STATE_WALKING, STATE_ATTACK, STATE_ROLL, STATE_DIE, STATE_HURT }
 
 var state = STATE_IDLE
 
@@ -69,6 +70,23 @@ func _physics_process(_delta):
 			pass
 		STATE_ATTACK:
 			new_anim = "slash_" + facing
+			pass
+		STATE_ROLL:
+			set_velocity(linear_vel)
+			move_and_slide()
+			linear_vel = velocity
+			var target_speed = Vector2()
+			if facing == "up":
+				target_speed.y = -1
+			if facing == "down":
+				target_speed.y = 1
+			if facing == "left":
+				target_speed.x = -1
+			if facing == "right":
+				target_speed.x = 1
+			target_speed *= ROLL_SPEED
+			linear_vel = linear_vel.lerp(target_speed, 0.9)
+			new_anim = "roll"
 			pass
 		STATE_DIE:
 			new_anim = "die"

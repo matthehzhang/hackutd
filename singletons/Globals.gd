@@ -4,15 +4,6 @@ extends Node
 var spawnpoint = ""
 var current_level = ""
 
-var current_enemy_name = "Enemy"
-var current_enemy_health = 100
-var current_enemy_attack = 10
-var battle_return_scene = ""
-var player_won_battle = false
-var player_health = 100
-var battle_background = ""
-var current_enemy_attacks = []
-
 func _ready():
 	RenderingServer.set_default_clear_color(Color.WHITE)
 
