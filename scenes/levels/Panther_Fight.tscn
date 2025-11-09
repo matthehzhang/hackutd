@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0q1r12t44f0b"]
+[gd_scene load_steps=5 format=3 uid="uid://pqwgqdp8vmd"]
 
 [ext_resource type="Script" uid="uid://cskvy5fk801c7" path="res://scenes/levels/Panther_Fight.gd" id="1_fxr0u"]
 [ext_resource type="Texture2D" uid="uid://bk6vwek1xs3i0" path="res://textures/pj/frames/panther.png" id="2_txhbe"]
@@ -23,7 +23,7 @@ texture = ExtResource("2_txhbe")
 
 [node name="House" type="Sprite2D" parent="."]
 position = Vector2(575.5, 326.5)
-scale = Vector2(0.5984375, 0.59166664)
+scale = Vector2(0.605, 0.605)
 texture = ExtResource("3_fotij")
 
 [node name="Player" type="Sprite2D" parent="."]
