@@ -20,3 +20,10 @@ res://scenes/characters/Boss0.gd
 res://scenes/levels/Fight0.tscn
 res://scenes/levels/Fox_Fight.tscn
 res://scenes/levels/fox_fight.gd
+res://scenes/characters/Npc.gd
+res://scenes/characters/Npc.tscn
+res://scenes/characters/Player.tscn
+res://scenes/levels/HouseInside.gd
+res://scenes/levels/Battle.tscn
+res://scenes/levels/Outside.tscn
+res://scenes/levels/Battle.gd
