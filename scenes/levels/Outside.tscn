@@ -1,13 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://damx5ema0gns7"]
+[gd_scene load_steps=10 format=3 uid="uid://damx5ema0gns7"]
 
+[ext_resource type="Script" uid="uid://c5tqm5h05oych" path="res://scenes/levels/Outside.gd" id="1_1qm1i"]
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://bycx5snr304xk" path="res://scenes/characters/Enemy.tscn" id="4"]
-[ext_resource type="PackedScene" path="res://scenes/props/House.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://d1gup5fymhyr5" path="res://scenes/props/House.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="8"]
 [ext_resource type="TileSet" uid="uid://dou25et3eci8x" path="res://textures/props/forest_tileset.tres" id="8_e6b1c"]
-[ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="13"]
-[ext_resource type="PackedScene" uid="uid://dwu2tlrkse1kh" path="res://scenes/misc/Quest.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://pwlg8dseag6p" path="res://scenes/characters/Npc.tscn" id="13"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4pt2u"]
 size = Vector2(4197.723, 378.0916)
@@ -16,23 +15,19 @@ size = Vector2(4197.723, 378.0916)
 size = Vector2(4041, 341.0002)
 
 [node name="Outside" type="Node"]
+script = ExtResource("1_1qm1i")
 
 [node name="level" type="Node2D" parent="."]
 z_index = 10
 y_sort_enabled = true
 position = Vector2(-1166, -911)
 
-[node name="Jorgito" parent="level" instance=ExtResource("13")]
+[node name="Professor Panik" parent="level" instance=ExtResource("13")]
 z_index = 10
-position = Vector2(1788, 1691)
+position = Vector2(1038, 926)
 scale = Vector2(0.4, 0.4)
-character_name = "Jorgito"
-
-[node name="Quest" parent="level/Jorgito" instance=ExtResource("14")]
-quest_name = "Life as a Delivery Guy"
-required_amount = 3
-initial_text = "TLDR; bring me 3 Generic Items"
-pending_text = "You forgot? I want 3 Generic Items"
+character_name = "Professor Panik"
+dialogs = ["Hello young hero! What a lovely sword you have there...it looks perfect for fighting monsters!", "You might've heard already, but strange things have been happening recently.", "THE MAD DEER has infected animals across our town with his curse.", "Friends, lovers, parents and children. They've turned their fangs against each other. The smell of blood lingers.", "This town needs you! Here, take this potion and cure our friends of their disease! ", "Head north: there have been reports of screams coming from the old abandoned house..."]
 
 [node name="Character" parent="level" instance=ExtResource("8")]
 z_index = 10
@@ -49,17 +44,12 @@ to_scene = "res://scenes/levels/HouseInside.tscn"
 z_index = 10
 position = Vector2(-2.12201, 173.199)
 
-[node name="enemy" parent="level" instance=ExtResource("4")]
-z_index = 10
-position = Vector2(649.8355, 1665.071)
-scale = Vector2(0.4, 0.4)
-
 [node name="walls" type="StaticBody2D" parent="level"]
 z_index = 10
 position = Vector2(-0.095336914, 107.998535)
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="level/walls"]
-position = Vector2(2350.0952, 851.00146)
+position = Vector2(2377.0952, 856.00146)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_4pt2u")
 
@@ -81,9 +71,13 @@ music_track = "res://music/310-world-map-loop.ogg"
 
 [node name="UI" parent="." instance=ExtResource("2")]
 
+[node name="Tooltip" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 z_index = 10
-color = Color(0.35882226, 0.36173218, 0.5536327, 1)
+color = Color(0.56505924, 0.57374173, 0.76607144, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = 10

@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://ddfr0xxi2hppu"]
+[gd_scene load_steps=14 format=3 uid="uid://ddfr0xxi2hppu"]
 
 [ext_resource type="Texture2D" uid="uid://bijef2y1b822l" path="res://textures/house_inside.png" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/props/Table.tscn" id="3"]
 [ext_resource type="Script" uid="uid://bkpv44hm1pafh" path="res://scenes/misc/Exit.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="5"]
+[ext_resource type="Script" uid="uid://g4yli6scfs6y" path="res://scenes/levels/Battle.gd" id="5_lx1r1"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="7"]
 [ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="8"]
@@ -110,6 +111,7 @@ spawnpoint = "house_outside"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
 position = Vector2(16.59033, -241.39001)
 shape = SubResource("3")
+script = ExtResource("5_lx1r1")
 
 [node name="Character" parent="." instance=ExtResource("5")]
 position = Vector2(4.19806, 260.181)

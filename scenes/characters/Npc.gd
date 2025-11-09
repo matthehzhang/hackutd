@@ -12,6 +12,8 @@ var active = false
 @export var dialogs = ["..."] # (Array, String, MULTILINE)
 var current_dialog = 0
 
+@onready var tooltip = $Tooltip
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
@@ -32,23 +34,17 @@ func _input(event):
 	if not event.is_action_pressed("interact"):
 		return
 	
-	# If the character is a questgiver delegate getting the text
-	# to the Quest node, show it and end the function
-	if has_node("Quest"):
-		var quest_dialog = get_node("Quest").process()
-		if quest_dialog != "":
-			Dialogs.show_dialog(quest_dialog, character_name)
-			return
-	
-	# If we reached here and there are generic dialogs to show, rotate among them
 	if not dialogs.is_empty():
-		Dialogs.show_dialog(dialogs[current_dialog], character_name)
-		current_dialog = wrapi(current_dialog + 1, 0, dialogs.size())
+		for dialog in dialogs:
+			Dialogs.show_dialog(dialog, character_name)
+			await Dialogs.dialog_ended
 		
 func _on_body_entered(body):
 	if body is Player:
 		active = true
+	tooltip.text = "Press space to talk"
 		
 func _on_body_exited(body):
 	if body is Player:
 		active = false
+	tooltip.text = ""

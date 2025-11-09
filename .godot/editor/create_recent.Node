@@ -1,3 +1,4 @@
+Label      - Matches the "text" keyword.
 Label
 Button
 Control
@@ -11,4 +12,3 @@ CollisionShape2D
 Enemy
 TileMap
 CanvasModulate
-Camera2D
