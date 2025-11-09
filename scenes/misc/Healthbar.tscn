@@ -4,7 +4,7 @@
 
 [node name="Healthbar" type="HBoxContainer"]
 offset_left = 35.0
-offset_top = 1177.0
-offset_right = 142.0
+offset_top = 1094.0
+offset_right = 799.0
 offset_bottom = 1205.0
 script = ExtResource("1")

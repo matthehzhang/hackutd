@@ -5,7 +5,7 @@ extends Node2D
 @onready var player = $Player
 #@onready var enemy_health_bar = $UI/EnemyHealthBar
 #@onready var player_health_bar = $UI/PlayerHealthBar
-@onready var battle_text = $BattleText
+@onready var battle_text = $UI/BattleText
 
 # QTE variables
 var qte_active = false
@@ -35,10 +35,10 @@ func _ready():
 	player_max_hp = 100
 	player_atk = 10
 	
-	enemy_name = "Fox"
-	enemy_hp = 90
-	enemy_max_hp = 100
-	enemy_atk = 15
+	enemy_name = "Panther"
+	enemy_hp = 60
+	enemy_max_hp = 60
+	enemy_atk = 10
 	
 	# Setup UI
 	#player_health_bar.max_value = player_max_hp
@@ -54,6 +54,7 @@ func _ready():
 
 func show_message(text: String):
 	battle_text.text = text
+	print("hello")
 
 func fight() -> void: 
 	var success = false
@@ -129,13 +130,15 @@ func win_battle():
 	
 	var dialogue = ""
 	if enemy_name == "Panther": 
-		dialogue = "Hero...thank you for saving my life! But you still have a journey ahead of you. The Mad Deer will stop at nothing to annihilate this world. Head East: there is a cave where you shall continue your path."
+		dialogue = "Hero...thank you for saving my life! But you still have a journey ahead of you."
 	if enemy_name == "Fox": 
 		dialogue = "I don't know what came over me! I'm so upset I hurt Raven, one of my closest friends. Make sure you defeat the terrible deer."
 	if enemy_name == "The Mad Deer": 
 		dialogue = "Fine. You win. But don't expect this to end. You heroes trample on the lives of people like me, without ever questioning why we turned to this life in the first place."
 		
 	Dialogs.show_dialog(dialogue, enemy_name)
+	await Dialogs.dialog_ended
+	Dialogs.show_dialog("The Mad Deer will stop at nothing to annihilate this world. Head East: there is a cave where you shall continue your path.", enemy_name)
 	await get_tree().create_timer(4.0).timeout
 	
 	# Raven thank you

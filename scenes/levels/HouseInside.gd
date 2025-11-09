@@ -46,7 +46,7 @@ func start_encounter():
 func show_pre_battle_dialogue():
 	# If you have a Dialogs system, use it here
 	# Example dialogue lines:
-	var dialogue = "H...h..ehehehe...     Is that cat flesh I smell? Dinner time! Dinner time! DINNER! DINNERDINNERDINNERDINNER"
+	var dialogue = "H...h..ehehehe...     Is that cat flesh I smell? Dinner time! Dinner time! DINNER!"
 
 	
 	# You'll need to adapt this to YOUR dialog system

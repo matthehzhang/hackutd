@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+AnimatedSprite2D
+Sprite2D
+Exit
+StaticBody2D
+CollisionShape2D
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 Node
 =======
@@ -6,10 +13,11 @@ Node
 Sprite2D
 >>>>>>> origin/design
 Node2D
+>>>>>>> a76f2d49ae211d96b238b7a2f6ec01df65b5df1a
 Player
+Node2D
 Enemy
 Label
-AnimatedSprite2D
 AnimationPlayer
 >>>>>>> origin/design
 CharacterBody2D
@@ -17,9 +25,12 @@ Button
 Control
 CanvasLayer
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 Sprite2D
 =======
 Node
 >>>>>>> origin/design
 Boss0
 CollisionShape2D
+>>>>>>> a76f2d49ae211d96b238b7a2f6ec01df65b5df1a

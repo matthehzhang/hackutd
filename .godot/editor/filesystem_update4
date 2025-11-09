@@ -33,6 +33,14 @@ res://scenes/levels/outside.gd
 res://scenes/levels/house_inside.gd
 res://scenes/levels/Mad_Deer_Fight.gd
 res://scenes/levels/Panther_Fight.gd
+<<<<<<< HEAD
+res://scenes/misc/Dialog_box.tscn
+res://scenes/characters/Player.gd
+res://scenes/misc/Healthbar.tscn
+res://scenes/misc/Healthbar.gd
+res://scenes/levels/sprite_2d.gd
+=======
 res://scenes/characters/animated_sprite_2d.gd
 res://scenes/levels/animated_sprite_2d.gd
 res://scenes/levels/Panther_Fight.tscn
+>>>>>>> a76f2d49ae211d96b238b7a2f6ec01df65b5df1a

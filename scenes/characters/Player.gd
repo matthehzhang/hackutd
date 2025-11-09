@@ -9,7 +9,7 @@ in the AssetLib if you want to make something more complex.
 
 @export var WALK_SPEED: int = 150 # pixels per second
 @export var ROLL_SPEED: int = 300 # pixels per second
-@export var hitpoints: int = 20
+@export var hitpoints: int = 10
 
 var linear_vel = Vector2()
 var roll_direction = Vector2.DOWN

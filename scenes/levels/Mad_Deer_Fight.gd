@@ -69,6 +69,7 @@ func fight() -> void:
 		# serial code should randomly choose one of the codes because ESP guy will make 
 		# 5 diff variations and we will cycle them randomly
 	success = await start_qte()
+	show_message(" ")
 	qte_max_time -= .01
 		
 	if not success: 
