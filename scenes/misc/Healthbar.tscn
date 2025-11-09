@@ -1,13 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://bwwclols3uph6"]
 
-[ext_resource path="res://scenes/misc/Healthbar.gd" type="Script" id=1]
+[ext_resource type="Script" uid="uid://dpijxs7npov33" path="res://scenes/misc/Healthbar.gd" id="1"]
 
 [node name="Healthbar" type="HBoxContainer"]
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 115.0
-offset_bottom = 39.0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 35.0
+offset_top = 1177.0
+offset_right = 142.0
+offset_bottom = 1205.0
+script = ExtResource("1")

@@ -1,7 +1,6 @@
 res://default_bus_layout.tres
 res://default_env.tres
 res://scenes/levels/Outside.tscn
+res://textures/props/forest_tileset.tres
+res://scenes/misc/Healthbar.tscn
 res://scenes/characters/Player.gd
-res://scenes/levels/HouseInside.tscn
-res://scenes/levels/Controls.tscn
-res://scenes/characters/Player.tscn
