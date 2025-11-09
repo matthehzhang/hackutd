@@ -1,11 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://kjyt1aqgrew8"]
+[gd_scene load_steps=17 format=3 uid="uid://kjyt1aqgrew8"]
 
 [ext_resource type="Texture2D" uid="uid://bwgyo0qknm6gt" path="res://textures/props/puddle_big.png" id="1_vfctp"]
 [ext_resource type="Texture2D" uid="uid://cgd2njb3hg82" path="res://textures/props/puddle_small.png" id="2_t2myr"]
 [ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="3_5me22"]
 [ext_resource type="PackedScene" uid="uid://dwu2tlrkse1kh" path="res://scenes/misc/Quest.tscn" id="4_5f1km"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="5_728p7"]
-[ext_resource type="PackedScene" path="res://scenes/props/House.tscn" id="6_rlli7"]
+[ext_resource type="PackedScene" uid="uid://d1gup5fymhyr5" path="res://scenes/props/House.tscn" id="6_rlli7"]
 [ext_resource type="PackedScene" path="res://scenes/props/Flower.tscn" id="7_lwaxw"]
 [ext_resource type="PackedScene" path="res://scenes/props/Grass.tscn" id="8_u153x"]
 [ext_resource type="PackedScene" path="res://scenes/props/MushroomBig.tscn" id="9_fyce6"]
@@ -13,9 +13,13 @@
 [ext_resource type="PackedScene" uid="uid://bycx5snr304xk" path="res://scenes/characters/Enemy.tscn" id="11_0g4jy"]
 [ext_resource type="PackedScene" path="res://scenes/items/Item.tscn" id="12_4x6sf"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="13_62imb"]
+[ext_resource type="Script" uid="uid://ba3uvyohty7n0" path="res://scenes/characters/Boss0.gd" id="13_t2myr"]
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="14_ky42e"]
 
-[node name="Outside" type="Node"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_vfctp"]
+radius = 31.50007
+
+[node name="Outside2" type="Node"]
 
 [node name="puddle_big" type="Sprite2D" parent="."]
 position = Vector2(661.445, 950.947)
@@ -41,7 +45,7 @@ y_sort_enabled = true
 position = Vector2(208.024, -128.355)
 
 [node name="Jorgito" parent="level" instance=ExtResource("3_5me22")]
-position = Vector2(2062.51, 2957.82)
+position = Vector2(1745.976, 2175.355)
 character_name = "Jorgito"
 
 [node name="Quest" parent="level/Jorgito" instance=ExtResource("4_5f1km")]
@@ -185,6 +189,14 @@ item_type = "Magic Sword"
 position = Vector2(2847.81, 2114.57)
 item_type = "Coso"
 amount = 3
+
+[node name="Boss0" type="CharacterBody2D" parent="level"]
+script = ExtResource("13_t2myr")
+metadata/_custom_type_script = "uid://ba3uvyohty7n0"
+
+[node name="Boss0 collide" type="CollisionShape2D" parent="level/Boss0"]
+position = Vector2(2137.976, 2395.355)
+shape = SubResource("CircleShape2D_vfctp")
 
 [node name="music_track" parent="." instance=ExtResource("13_62imb")]
 music_track = "res://music/310-world-map-loop.ogg"

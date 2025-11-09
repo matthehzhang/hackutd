@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://p6vxbotrhbs6"]
+
+[ext_resource type="Script" uid="uid://bk6l4f8f7r3w0" path="res://scenes/levels/fox_fight.gd" id="1_8woks"]
+[ext_resource type="Texture2D" uid="uid://bq8d10ff8fl5m" path="res://textures/background/background.jpg" id="1_37jcr"]
+
+[node name="FoxFight" type="Node2D"]
+script = ExtResource("1_8woks")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(564.99994, 323)
+scale = Vector2(3.9, 3.9)
+texture = ExtResource("1_37jcr")
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+
+[node name="Enemy" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PlayerActions" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="UI/PlayerActions"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

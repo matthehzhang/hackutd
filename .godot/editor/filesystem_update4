@@ -15,3 +15,8 @@ res://textures/props/forest_tileset.tres
 res://scenes/levels/HouseInside.tscn
 res://scenes/levels/Menu.tscn
 res://scenes/props/House.tscn
+res://scenes/characters/Enemy.tscn
+res://scenes/characters/Boss0.gd
+res://scenes/levels/Fight0.tscn
+res://scenes/levels/Fox_Fight.tscn
+res://scenes/levels/fox_fight.gd
