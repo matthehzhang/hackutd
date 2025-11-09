@@ -6,8 +6,12 @@ extends Node2D
 @export var enemy_attack = 10
 
 var battle_triggered = false
+var serial_manager
 
 func _ready():
+	serial_manager = get_node("SerialManager")
+	serial_manager.SendMessage("Hello ESP32!")
+	serial_manager.SendMessage("HOUSE")
 	# If you have a dialog system, connect to it
 	if Dialogs and not battle_triggered:
 		# Wait a moment before starting cutscene
@@ -16,6 +20,13 @@ func _ready():
 		await get_tree().create_timer(0.5).timeout
 		if auto_trigger_battle:
 			start_encounter()
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	var msg = serial_manager.ReadMessage()
+	if msg != "":
+		print("Received from ESP:", msg)
+	pass
 
 func start_encounter():
 	if battle_triggered:

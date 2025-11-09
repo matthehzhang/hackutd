@@ -698,6 +698,7 @@ void setup() {
 
 void loop() {
   checkSerialCommands();
+  // Serial.println("here");
   
   if (currentMode != lastMode) {
     setServoTargetsForMode(currentMode);

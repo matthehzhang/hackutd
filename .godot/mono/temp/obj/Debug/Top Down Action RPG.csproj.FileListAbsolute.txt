@@ -1,0 +1,37 @@
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.csproj.AssemblyReference.cache
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.AssemblyInfoInputs.cache
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.AssemblyInfo.cs
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.csproj.CoreCompileInputs.cache
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.sourcelink.json
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\Top Down Action RPG.deps.json
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\Top Down Action RPG.runtimeconfig.json
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\Top Down Action RPG.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\Top Down Action RPG.pdb
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\System.IO.Ports.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\bin\Debug\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down.6C069128.Up2Date
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\refint\Top Down Action RPG.dll
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.pdb
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\Top Down Action RPG.genruntimeconfig.cache
+C:\Users\hello\OneDrive\Desktop\Anikait Gupta\College\Year 2\Hack UTD\hackutd\.godot\mono\temp\obj\Debug\ref\Top Down Action RPG.dll

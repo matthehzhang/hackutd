@@ -11,7 +11,7 @@ script = ExtResource("1_fxr0u")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(575.5, 326.5)
-scale = Vector2(0.5984375, 0.59166664)
+scale = Vector2(0.605, 0.605)
 texture = ExtResource("3_fotij")
 
 [node name="Player" type="CharacterBody2D" parent="."]
