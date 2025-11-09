@@ -166,9 +166,7 @@ func lose_battle():
 
 func return_to_scene(won: bool):
 	# Return to the scene you came from
-	if Globals.battle_return_scene != "":
-		get_tree().change_scene_to_file(Globals.battle_return_scene)
-		
+	get_tree().change_scene_to_file(Globals.battle_return_scene)
 
 # Simple screen shake effect
 func shake_sprite(sprite: Node):

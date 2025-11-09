@@ -48,14 +48,8 @@ func show_pre_battle_dialogue():
 
 func start_battle():
 	# Store enemy data in Globals so battle scene can access it
-	Globals.current_enemy_name = enemy_name
-	Globals.current_enemy_health = enemy_health
-	Globals.current_enemy_attack = enemy_attack
-	Globals.current_enemy_attacks = ["Pounce"]
-	Globals.battle_return_scene = "res://scenes/levels/Outside.tscn"
 	Globals.spawnpoint = "house_outside"
 	### REPLACE
-	Globals.battle_background = "res://assets/backgrounds/abandoned_house_battle"
 	
 	# Transition to battle scene
 	get_tree().change_scene_to_file("res://scenes/levels/Panther_Fight.tscn")

@@ -57,7 +57,7 @@ size = Vector2(1378.44, 314.398)
 script = ExtResource("1_bfufd")
 
 [node name="house_inside" type="Sprite2D" parent="."]
-texture = ExtResource("1")
+texture = ExtResource("2_pccjs")
 
 [node name="walls" type="StaticBody2D" parent="."]
 

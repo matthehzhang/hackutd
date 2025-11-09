@@ -1,18 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Node
 =======
+=======
+Sprite2D
+>>>>>>> origin/design
 Node2D
+Player
+Enemy
+Label
 AnimatedSprite2D
 AnimationPlayer
 >>>>>>> origin/design
 CharacterBody2D
-Label
 Button
 Control
 CanvasLayer
+<<<<<<< HEAD
 Sprite2D
+=======
+Node
+>>>>>>> origin/design
 Boss0
 CollisionShape2D
-Enemy
-TileMap
-CanvasModulate
