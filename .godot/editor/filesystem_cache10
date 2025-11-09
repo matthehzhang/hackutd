@@ -1,7 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762656896
-default_bus_layout.tres::AudioBusLayout::3980766710308770630::1762649598::0::1::::<><><>0<>0<><>::
-default_env.tres::Environment::7773133001570591395::1762655714::0::1::::<><><>0<>0<><>::
+::res://::1762666997
+default_bus_layout.tres::AudioBusLayout::3980766710308770630::1762666997::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment::7773133001570591395::1762666979::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::7626627060122080361::1762630350::1762630350::1::::<><><>0<>0<>fdc731305c39b0e91668c7680a097a28<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1762630350::0::1::::<><><>0<>0<><>::
 ::res://fonts/::1762649157
@@ -28,7 +28,7 @@ Player.tscn::PackedScene::6114344374568483062::1762654625::0::1::::<><><>0<>0<><
 ::res://scenes/items/::1762648995
 Item.gd::GDScript::2002927818073419705::1762637058::0::1::::<>Area2D<><>0<>0<><>::
 Item.tscn::PackedScene::-1::1762637058::0::1::::<><><>0<>0<><>::res://textures/item.png<>res://scenes/items/Item.gd<>res://sounds/item_collected.wav
-::res://scenes/levels/::1762655714
+::res://scenes/levels/::1762668866
 Controls.gd::GDScript::4226121593035196892::1762630350::0::1::::<>Control<><>0<>0<><>::
 Controls.tscn::PackedScene::2535291976538318786::1762648995::0::1::::<><><>0<>0<><>::uid://b1hfuturpsieu::::res://scenes/levels/Controls.gd<>uid://dhdedjhqm5wcg::::res://textures/misc/controls.png<>uid://drwpb3u26vnpm::::res://fonts/dialog.tres
 HouseInside.tscn::PackedScene::7381228548455763830::1762655506::0::1::::<><><>0<>0<><>::uid://bijef2y1b822l::::res://textures/house_inside.png<>res://scenes/props/Table.tscn<>uid://bkpv44hm1pafh::::res://scenes/misc/Exit.gd<>uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn<>res://scenes/misc/MusicTrack.tscn<>uid://deqgnj30xx13t::::res://scenes/misc/UI.tscn<>res://scenes/characters/Npc.tscn
@@ -36,6 +36,8 @@ Intro.tscn::PackedScene::5915851838591814692::1762637058::0::1::::<><><>0<>0<><>
 Menu.gd::GDScript::3808976183207425222::1762650171::0::1::::<>Control<><>0<>0<><>::
 Menu.tscn::PackedScene::-1::1762630350::0::1::::<><><>0<>0<><>::res://fonts/dialog.tres<>res://textures/menu/game_title.png<>res://textures/menu/bg.png<>res://scenes/levels/Menu.gd
 Outside.tscn::PackedScene::7185484877443509496::1762655714::0::1::::<><><>0<>0<><>::uid://deqgnj30xx13t::::res://scenes/misc/UI.tscn<>uid://bycx5snr304xk::::res://scenes/characters/Enemy.tscn<>uid://d1gup5fymhyr5::::res://scenes/props/House.tscn<>res://scenes/misc/MusicTrack.tscn<>uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn<>uid://dou25et3eci8x::::res://textures/props/forest_tileset.tres<>res://scenes/characters/Npc.tscn<>uid://dwu2tlrkse1kh::::res://scenes/misc/Quest.tscn
+HouseInside.gd::GDScript::4439289608210941353::1762667121::0::1::::<>Node<><>0<>0<><>::
+battle.gd::GDScript::482477337151743558::1762668866::0::1::::<>Node<><>0<>0<><>::
 Tunnel.tscn::PackedScene::9027951237458224424::1762653473::0::1::::<><><>0<>0<><>::uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn
 ::res://scenes/misc/::1762650235
 DespawnFX.tscn::PackedScene::-1::1762630350::0::1::::<><><>0<>0<><>::res://scenes/characters/DespawnFx.gd<>res://textures/pj/smoke_particle.png

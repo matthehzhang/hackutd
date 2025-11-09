@@ -20,8 +20,6 @@ func _ready():
 	_on_health_changed(player.hitpoints)
 	pass # Replace with function body.
 
-
-# You should probably rewrite this.
 func _on_health_changed(new_hp):
 	for child in get_children():
 		child.queue_free()
