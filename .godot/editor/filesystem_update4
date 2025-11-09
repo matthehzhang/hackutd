@@ -33,3 +33,5 @@ res://scenes/levels/outside.gd
 res://scenes/levels/house_inside.gd
 res://scenes/levels/Mad_Deer_Fight.gd
 res://scenes/levels/Panther_Fight.gd
+res://scenes/characters/animated_sprite_2d.gd
+res://scenes/levels/animated_sprite_2d.gd
