@@ -27,3 +27,5 @@ res://scenes/levels/HouseInside.gd
 res://scenes/levels/Battle.tscn
 res://scenes/levels/Outside.tscn
 res://scenes/levels/Battle.gd
+res://scenes/levels/SerialManager.gd
+res://scenes/levels/SerialManager.cs

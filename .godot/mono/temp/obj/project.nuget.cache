@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "aZhB9A/03aw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hello\\OneDrive\\Desktop\\Anikait Gupta\\College\\Year 2\\Hack UTD\\hackutd\\Top Down Action RPG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hello\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\9.0.10\\runtime.android-arm.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.android-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\9.0.10\\runtime.android-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.android-x86.runtime.native.system.io.ports\\9.0.10\\runtime.android-x86.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\9.0.10\\runtime.linux-arm.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-musl-arm.runtime.native.system.io.ports\\9.0.10\\runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-musl-x64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\9.0.10\\runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.native.system.io.ports\\9.0.10\\runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.osx-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\9.0.10\\runtime.osx-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\system.io.ports\\9.0.10\\system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.21\\microsoft.aspnetcore.app.ref.8.0.21.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.21\\microsoft.netcore.app.ref.8.0.21.nupkg.sha512",
+    "C:\\Users\\hello\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.21\\microsoft.windowsdesktop.app.ref.8.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

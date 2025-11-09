@@ -1,3 +1,4 @@
+Node
 CharacterBody2D
 Label
 Button
@@ -5,7 +6,6 @@ Control
 CanvasLayer
 AnimationPlayer
 Sprite2D
-Node
 Boss0
 CollisionShape2D
 Enemy

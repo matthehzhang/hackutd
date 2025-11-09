@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="8"]
 [ext_resource type="TileSet" uid="uid://dou25et3eci8x" path="res://textures/props/forest_tileset.tres" id="8_e6b1c"]
-[ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="9_u4v50"]
+[ext_resource type="Script" uid="uid://bwq28d3ebuwbh" path="res://scenes/levels/SerialManager.cs" id="9_u4v50"]
 [ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="13"]
 [ext_resource type="PackedScene" uid="uid://dwu2tlrkse1kh" path="res://scenes/misc/Quest.tscn" id="14"]
 
