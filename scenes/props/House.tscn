@@ -16,39 +16,44 @@ func _ready():
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ca285"]
+size = Vector2(16.775002, 20)
 
 [sub_resource type="CapsuleShape2D" id="3"]
-radius = 190.939
-height = 517.0
+radius = 421.82523
+height = 1068.5941
 
 [sub_resource type="RectangleShape2D" id="4"]
-size = Vector2(234.622, 129.4512)
+size = Vector2(233.311, 124.7256)
 
 [node name="house" type="StaticBody2D"]
+scale = Vector2(0.84, 0.84)
 script = SubResource("1")
 
 [node name="house" type="Sprite2D" parent="."]
-position = Vector2(1475, 1337)
-scale = Vector2(8, 8)
+z_index = -2
+position = Vector2(871.99994, 884)
+scale = Vector2(5.948798, 5.324848)
 texture = ExtResource("1_ca285")
 offset = Vector2(-216.037, -247.153)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-252.00002, -375)
+position = Vector2(-415.00018, -365.50006)
 rotation = 1.5708
-scale = Vector2(40, 40)
+scale = Vector2(0.84, 0.84)
 shape = SubResource("RectangleShape2D_ca285")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-244, -429)
+position = Vector2(-404.7619, -347.61902)
 rotation = 1.5708
-scale = Vector2(2, 2)
+scale = Vector2(0.84, 0.84)
 shape = SubResource("3")
 
 [node name="to_inside" type="Area2D" parent="."]
 position = Vector2(7.79211, 0.0572205)
+scale = Vector2(0.84, 0.84)
 script = ExtResource("1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="to_inside"]
-position = Vector2(-413.7921, -33.05722)
+position = Vector2(-634.27637, -14.240458)
+scale = Vector2(0.84, 0.84)
 shape = SubResource("4")

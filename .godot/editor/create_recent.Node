@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 Node
+=======
+Node2D
+AnimatedSprite2D
+AnimationPlayer
+>>>>>>> origin/design
 CharacterBody2D
 Label
 Button
 Control
 CanvasLayer
-AnimationPlayer
 Sprite2D
 Boss0
 CollisionShape2D
 Enemy
 TileMap
 CanvasModulate
-Camera2D

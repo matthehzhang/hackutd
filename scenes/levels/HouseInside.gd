@@ -58,4 +58,4 @@ func start_battle():
 	Globals.battle_background = "res://assets/backgrounds/abandoned_house_battle"
 	
 	# Transition to battle scene
-	get_tree().change_scene_to_file("res://levels/battle.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/Panther_Fight.tscn")
