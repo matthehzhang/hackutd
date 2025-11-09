@@ -1,7 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762707829
+::res://::1762709910
 default_bus_layout.tres::AudioBusLayout::3980766710308770630::1762654044::0::1::::<><><>0<>0<><>::
-default_env.tres::Environment::7773133001570591395::1762707411::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment::7773133001570591395::1762709910::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::7626627060122080361::1762633096::1762633096::1::::<><><>0<>0<>fdc731305c39b0e91668c7680a097a28<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1762633096::0::1::::<><><>0<>0<><>::
 ::res://fonts/::1762684237
@@ -16,7 +16,7 @@ a-2-3-groovy-bgm.ogg::AudioStreamOggVorbis::1369380759703489794::1762633096::176
 logo.wav::AudioStreamWAV::3793929821899036763::1762633096::1762633096::1::::<><><>0<>0<>c40fdd58efa72a2fe63de4b1fb4f1a2c<>res://.godot/imported/logo.wav-2399cc045034add6fef47360adc2af5d.sample::
 ::res://scenes/::1762633097
 ::res://scenes/characters/::1762707829
-animated_sprite_2d.gd::GDScript::-1::1762707829::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+animated_sprite_2d.gd::GDScript::6985883591670159583::1762707829::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
 Boss0.gd::GDScript::2445476384866191267::1762694552::0::1::::Boss0<>CharacterBody2D<><>0<>0<><>::
 debug_character.gd::GDScript::7129232760026543800::1762633097::0::1::::<>CanvasLayer<><>0<>0<><>::
 debug_character.tscn::PackedScene::-1::1762633097::0::1::::<><><>0<>0<><>::res://fonts/Candy Demo.ttf<>res://scenes/characters/debug_character.gd
@@ -30,8 +30,8 @@ Player.tscn::PackedScene::6114344374568483062::1762707829::0::1::::<><><>0<>0<><
 ::res://scenes/items/::1762681835
 Item.gd::GDScript::3286310891698357647::1762633097::0::1::::<>Area2D<><>0<>0<><>::
 Item.tscn::PackedScene::-1::1762633097::0::1::::<><><>0<>0<><>::res://textures/item.png<>res://scenes/items/Item.gd<>res://sounds/item_collected.wav
-::res://scenes/levels/::1762707829
-animated_sprite_2d.gd::GDScript::-1::1762707829::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+::res://scenes/levels/::1762709567
+animated_sprite_2d.gd::GDScript::7887450486223016000::1762707829::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
 Battle.gd::GDScript::482477337151743558::1762698449::0::1::::<>Node2D<><>0<>0<><>::
 Battle.tscn::PackedScene::2153817645232448215::1762698449::0::1::::<><><>0<>0<><>::uid://g4yli6scfs6y::::res://scenes/levels/Battle.gd
 Cave.tscn::PackedScene::-1::1762707829::0::1::::<><><>0<>0<><>::
@@ -40,19 +40,19 @@ Controls.tscn::PackedScene::-1::1762680441::0::1::::<><><>0<>0<><>::res://scenes
 Fight0.tscn::PackedScene::721960340420212101::1762694552::0::1::::<><><>0<>0<><>::uid://bwgyo0qknm6gt::::res://textures/props/puddle_big.png<>uid://cgd2njb3hg82::::res://textures/props/puddle_small.png<>res://scenes/characters/Npc.tscn<>uid://dwu2tlrkse1kh::::res://scenes/misc/Quest.tscn<>uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn<>uid://d1gup5fymhyr5::::res://scenes/props/House.tscn<>res://scenes/props/Flower.tscn<>res://scenes/props/Grass.tscn<>res://scenes/props/MushroomBig.tscn<>res://scenes/props/MushroomSmall.tscn<>uid://bycx5snr304xk::::res://scenes/characters/Enemy.tscn<>res://scenes/items/Item.tscn<>res://scenes/misc/MusicTrack.tscn<>uid://ba3uvyohty7n0::::res://scenes/characters/Boss0.gd<>uid://deqgnj30xx13t::::res://scenes/misc/UI.tscn
 fox_fight.gd::GDScript::3153024819258888669::1762707829::0::1::::<>Node2D<><>0<>0<><>::
 Fox_Fight.tscn::PackedScene::1118144570091126831::1762707829::0::1::::<><><>0<>0<><>::uid://bk6l4f8f7r3w0::::res://scenes/levels/fox_fight.gd<>uid://bq8d10ff8fl5m::::res://textures/background/background.jpg<>uid://x0w5wbpsvs0p::::res://textures/pj/frames/attack_up0002.png<>uid://dgwno0a8qdls8::::res://icon.png
-HouseInside.gd::GDScript::4439289608210941353::1762707829::0::1::::<>Node2D<><>0<>0<><>::
-HouseInside.tscn::PackedScene::7381228548455763830::1762707829::0::1::::<><><>0<>0<><>::uid://bijef2y1b822l::::res://textures/house_inside.png<>uid://bji4lk6evsrea::::res://scenes/levels/house_inside.gd<>res://scenes/props/Table.tscn<>uid://bkpv44hm1pafh::::res://scenes/misc/Exit.gd<>uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn<>res://scenes/misc/MusicTrack.tscn<>uid://deqgnj30xx13t::::res://scenes/misc/UI.tscn<>res://scenes/characters/Npc.tscn<>uid://bldd82pkillbd::::res://scenes/levels/SerialManager.cs
+HouseInside.gd::GDScript::4439289608210941353::1762709075::0::1::::<>Node2D<><>0<>0<><>::
+HouseInside.tscn::PackedScene::7381228548455763830::1762709075::0::1::::<><><>0<>0<><>::uid://b4ioplwjrx00l::::res://scenes/levels/HouseInside.gd<>uid://cahcbulynrksc::::res://textures/pj/frames/house.jpg<>uid://bkpv44hm1pafh::::res://scenes/misc/Exit.gd<>uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn<>res://scenes/misc/MusicTrack.tscn<>uid://deqgnj30xx13t::::res://scenes/misc/UI.tscn<>uid://bldd82pkillbd::::res://scenes/levels/SerialManager.cs
 Intro.tscn::PackedScene::5915851838591814692::1762633097::0::1::::<><><>0<>0<><>::uid://xriucyfo0o30::::res://textures/misc/logo-bg.png<>uid://bc8oc41wxytr1::::res://textures/misc/logo-logo.png<>uid://dqt0n5ytc0a4r::::res://textures/misc/logo-studio.png<>uid://bub2p8fvv46yx::::res://music/logo.wav
 Mad_Deer_Fight.gd::GDScript::2387435131088571764::1762707829::0::1::::<>Node2D<><>0<>0<><>::
 Mad_Deer_Fight.tscn::PackedScene::-1::1762707829::0::1::::<><><>0<>0<><>::
 Menu.gd::GDScript::3808976183207425222::1762633097::0::1::::<>Control<><>0<>0<><>::
-Menu.tscn::PackedScene::8703243898445102396::1762685243::0::1::::<><><>0<>0<><>::uid://drwpb3u26vnpm::::res://fonts/dialog.tres<>uid://cb2u7ijtdnnyg::::res://textures/menu/game_title.png<>uid://ck0bibv77mxh2::::res://textures/menu/bg.png<>uid://bujdjtd24da3g::::res://scenes/levels/Menu.gd
+Menu.tscn::PackedScene::8703243898445102396::1762709567::0::1::::<><><>0<>0<><>::uid://drwpb3u26vnpm::::res://fonts/dialog.tres<>uid://cb2u7ijtdnnyg::::res://textures/menu/game_title.png<>uid://ck0bibv77mxh2::::res://textures/menu/bg.png<>uid://bujdjtd24da3g::::res://scenes/levels/Menu.gd
 Mountain.tscn::PackedScene::-1::1762707829::0::1::::<><><>0<>0<><>::
 Outside.tscn::PackedScene::7185484877443509496::1762707829::0::1::::<><><>0<>0<><>::uid://cvd0ly18ijsjf::::res://scenes/levels/outside.gd<>uid://deqgnj30xx13t::::res://scenes/misc/UI.tscn<>uid://bycx5snr304xk::::res://scenes/characters/Enemy.tscn<>uid://d1gup5fymhyr5::::res://scenes/props/House.tscn<>res://scenes/misc/MusicTrack.tscn<>uid://ctd3mgp0s172q::::res://scenes/characters/Player.tscn<>uid://dou25et3eci8x::::res://textures/props/forest_tileset.tres<>uid://bldd82pkillbd::::res://scenes/levels/SerialManager.cs<>res://scenes/characters/Npc.tscn<>uid://dwu2tlrkse1kh::::res://scenes/misc/Quest.tscn
-outside.gd::GDScript::6254539087834929767::1762705122::0::1::::<>Node<><>0<>0<><>::
+outside.gd::GDScript::6254539087834929767::1762708672::0::1::::<>Node<><>0<>0<><>::
 house_inside.gd::GDScript::3036416308324022380::1762705122::0::1::::<>Node<><>0<>0<><>::
 Panther_Fight.gd::GDScript::6058203830237188516::1762707829::0::1::::<>Node2D<><>0<>0<><>::
-Panther_Fight.tscn::PackedScene::-1::1762707829::0::1::::<><><>0<>0<><>::
+Panther_Fight.tscn::PackedScene::31976765675712327::1762709075::0::1::::<><><>0<>0<><>::uid://cskvy5fk801c7::::res://scenes/levels/Panther_Fight.gd<>uid://bk6vwek1xs3i0::::res://textures/pj/frames/panther.png<>uid://cahcbulynrksc::::res://textures/pj/frames/house.jpg<>uid://5vhvshbs8vt6::::res://textures/pj/frames/poyo_attack_idle.png
 Raven.tscn::PackedScene::-1::1762707829::0::1::::<><><>0<>0<><>::
 SerialManager.cs::CSharpScript::3164933620918807721::1762705122::0::1::::<>Node<><>0<>0<><>::
 ::res://scenes/misc/::1762707829
@@ -98,8 +98,9 @@ house_inside.png::CompressedTexture2D::2966764085914234853::1762633097::17626330
 item.png::CompressedTexture2D::8468520550723177663::1762633097::1762633097::1::::<><><>0<>0<>e51bcb7e72b6a63945b317ff7614db90<>res://.godot/imported/item.png-c0b5be9c59f7c422ed1b6ef5eea8e3e7.ctex::
 ::res://textures/background/::1762694676
 background.jpg::CompressedTexture2D::3577796550484680652::1762694552::1762694676::1::::<><><>0<>0<>253152a36e0fb5014e25076e493601fd<>res://.godot/imported/background.jpg-e06c424232c20b2b1eb9d926c84029cb.ctex::
-::res://textures/menu/::1762633097
+::res://textures/menu/::1762710011
 bg.png::CompressedTexture2D::5526414337423463685::1762633097::1762633097::1::::<><><>0<>0<>524a7563aabd9625f7693f2a68794bc8<>res://.godot/imported/bg.png-36ab4cd6277172dca96e2ca6c8cc9c6b.ctex::
+Game_Menu.png::CompressedTexture2D::4938977315801280203::1762710012::1762710018::1::::<><><>0<>0<>5e03f4d3370455209300729cb8949ad9<>res://.godot/imported/Game_Menu.png-26df8852f4b273a40ea0bcc4a2643bf9.ctex::
 game_title.png::CompressedTexture2D::4900040330601984162::1762633097::1762633097::1::::<><><>0<>0<>4abbb452f194dc4de3425fe87c82d473<>res://.godot/imported/game_title.png-681172d51ca8e7580918ddd2b5d36580.ctex::
 ::res://textures/misc/::1762633097
 arrow.png::CompressedTexture2D::2806665890458309876::1762633097::1762633097::1::::<><><>0<>0<>e10457666e04abfa766ad937f733442a<>res://.godot/imported/arrow.png-ec55c7769f369afe9798fd7991c2f100.ctex::
@@ -118,7 +119,7 @@ next_dialog_arrow.png::CompressedTexture2D::8926604764619762139::1762633097::176
 ::res://textures/pj/::1762633097
 pj.png::CompressedTexture2D::7605602642949346831::1762633097::1762633097::1::::<><><>0<>0<>c42b581cbacd147682c372ed423f0858<>res://.godot/imported/pj.png-b1edd4b2d29ef35b514041d98adc75f9.ctex::
 smoke_particle.png::CompressedTexture2D::4764024107927800308::1762633097::1762633097::1::::<><><>0<>0<>cdd26386d36f60085c98e1eb1ce2d5cb<>res://.godot/imported/smoke_particle.png-e86f3f46a43e67aea298162a26ed4f2f.ctex::
-::res://textures/pj/frames/::1762707830
+::res://textures/pj/frames/::1762707881
 attack_down0000.png::CompressedTexture2D::788646306714421588::1762633097::1762633097::1::::<><><>0<>0<>72c04ff7ddc7a03a17e4c2c3d32099b9<>res://.godot/imported/attack_down0000.png-7f93cbeb79ff8007a5c2b2052865d454.ctex::
 attack_down0001.png::CompressedTexture2D::6332040416002262076::1762633097::1762633097::1::::<><><>0<>0<>09757be9bead37db0f8dade25053157c<>res://.godot/imported/attack_down0001.png-089887afe2cc8f37adc90a7d3621a342.ctex::
 attack_down0002.png::CompressedTexture2D::4647760665400116238::1762633097::1762633097::1::::<><><>0<>0<>233ea473f2ce0a5ddfbebc6ae8675d61<>res://.godot/imported/attack_down0002.png-ee29f20f5e37e7b85050f06b961b96cd.ctex::
