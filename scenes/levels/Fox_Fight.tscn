@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://p6vxbotrhbs6"]
+[gd_scene load_steps=5 format=3 uid="uid://p6vxbotrhbs6"]
 
 [ext_resource type="Script" uid="uid://bk6l4f8f7r3w0" path="res://scenes/levels/fox_fight.gd" id="1_8woks"]
 [ext_resource type="Texture2D" uid="uid://bq8d10ff8fl5m" path="res://textures/background/background.jpg" id="1_37jcr"]
+[ext_resource type="Texture2D" uid="uid://x0w5wbpsvs0p" path="res://textures/pj/frames/attack_up0002.png" id="3_kt1dm"]
+[ext_resource type="Texture2D" uid="uid://dgwno0a8qdls8" path="res://icon.png" id="4_8o1oe"]
 
 [node name="FoxFight" type="Node2D"]
 script = ExtResource("1_8woks")
@@ -14,12 +16,16 @@ texture = ExtResource("1_37jcr")
 [node name="Player" type="Node" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(232, 443)
+texture = ExtResource("3_kt1dm")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
 
 [node name="Enemy" type="Node" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+position = Vector2(982, 138)
+texture = ExtResource("4_8o1oe")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
 
@@ -35,3 +41,7 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+
+[node name="BattleLog" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
