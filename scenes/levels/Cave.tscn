@@ -36,6 +36,3 @@ script = ExtResource("4_wmhog")
 
 [node name="SerialManager" type="Node" parent="."]
 script = ExtResource("6_goamk")
-
-[node name="SerialManager2" type="Node" parent="."]
-script = ExtResource("6_goamk")
