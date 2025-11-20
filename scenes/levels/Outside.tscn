@@ -1,20 +1,24 @@
-[gd_scene load_steps=13 format=3 uid="uid://damx5ema0gns7"]
+[gd_scene load_steps=14 format=3 uid="uid://damx5ema0gns7"]
 
-[ext_resource type="Script" uid="uid://cvd0ly18ijsjf" path="res://scenes/levels/outside.gd" id="1_h6l5i"]
+[ext_resource type="Script" path="res://scenes/levels/outside.gd" id="1_h6l5i"]
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://578yq1ifj1wm" path="res://textures/pj/frames/cave-entrance.png" id="4_e6b1c"]
 [ext_resource type="PackedScene" uid="uid://d1gup5fymhyr5" path="res://scenes/props/House.tscn" id="5"]
+[ext_resource type="Script" uid="uid://bkpv44hm1pafh" path="res://scenes/misc/Exit.gd" id="5_u4v50"]
 [ext_resource type="PackedScene" path="res://scenes/misc/MusicTrack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="8"]
 [ext_resource type="TileSet" uid="uid://dou25et3eci8x" path="res://textures/props/forest_tileset.tres" id="8_e6b1c"]
 [ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="9_u4v50"]
-[ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="13"]
-[ext_resource type="PackedScene" uid="uid://dwu2tlrkse1kh" path="res://scenes/misc/Quest.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://pwlg8dseag6p" path="res://scenes/characters/Npc.tscn" id="13"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4pt2u"]
-size = Vector2(4197.723, 378.0916)
+size = Vector2(2739, 236.0709)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7a0mr"]
 size = Vector2(4041, 341.0002)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h6l5i"]
+size = Vector2(18.428448, 20.229736)
 
 [node name="Outside" type="Node"]
 script = ExtResource("1_h6l5i")
@@ -31,9 +35,16 @@ scale = Vector2(0.4, 0.4)
 character_name = "Professor Panik"
 dialogs = ["Hello young hero! What a lovely sword you have there...it looks perfect for fighting monsters!", "You might've heard already, but strange things have been happening recently.", "THE MAD DEER has infected animals across our town with his curse.", "Friends, lovers, parents and children. They've turned their fangs against each other. The smell of blood lingers.", "This town needs you! Here, take this potion and cure our friends of their disease! ", "Head north: there have been reports of screams coming from the old abandoned house..."]
 
+[node name="Tooltip" type="Label" parent="level/Professor Panik"]
+offset_left = -77.49999
+offset_top = -119.99999
+offset_right = 76.50001
+offset_bottom = -96.99999
+text = "Press \"E\" to interact"
+
 [node name="Character" parent="level" instance=ExtResource("8")]
 z_index = 10
-position = Vector2(1004, 997)
+position = Vector2(908.00006, 1024)
 scale = Vector2(0.4, 0.4)
 
 [node name="house" parent="level" instance=ExtResource("5")]
@@ -51,7 +62,7 @@ z_index = 10
 position = Vector2(-0.095336914, 107.998535)
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="level/walls"]
-position = Vector2(2377.0952, 856.00146)
+position = Vector2(2317.1309, 675.50146)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_4pt2u")
 
@@ -60,13 +71,34 @@ position = Vector2(1371.0953, 1975.0015)
 shape = SubResource("RectangleShape2D_7a0mr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="level/walls"]
-position = Vector2(-118.90466, 893.00146)
+position = Vector2(-293.90466, 565.00146)
 rotation = 1.5707964
+scale = Vector2(2.815, 2.815)
 shape = SubResource("RectangleShape2D_4pt2u")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="level/walls"]
 position = Vector2(1294.0953, -319.99854)
 shape = SubResource("RectangleShape2D_7a0mr")
+
+[node name="Cave" type="StaticBody2D" parent="level"]
+z_index = 2
+position = Vector2(1626.9999, 635.99994)
+scale = Vector2(0.405, 0.405)
+
+[node name="Sprite2D" type="Sprite2D" parent="level/Cave"]
+scale = Vector2(1.0000002, 1.0000002)
+texture = ExtResource("4_e6b1c")
+
+[node name="Exit" type="Area2D" parent="level/Cave"]
+scale = Vector2(1.0000001, 1.0000001)
+script = ExtResource("5_u4v50")
+to_scene = "res://scenes/levels/Cave.tscn"
+metadata/_custom_type_script = "uid://bkpv44hm1pafh"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="level/Cave/Exit"]
+position = Vector2(3.7039795, 0.00012207031)
+scale = Vector2(17.819996, 17.819996)
+shape = SubResource("RectangleShape2D_h6l5i")
 
 [node name="music_track" parent="." instance=ExtResource("6")]
 music_track = "res://music/310-world-map-loop.ogg"

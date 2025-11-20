@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dv86fjxyfb7t5"]
 
 [ext_resource type="FontFile" uid="uid://drwpb3u26vnpm" path="res://fonts/dialog.tres" id="1"]
-[ext_resource type="Texture2D" uid="uid://cb2u7ijtdnnyg" path="res://textures/menu/game_title.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://ck0bibv77mxh2" path="res://textures/menu/bg.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ccmqh8oqr5pxb" path="res://textures/menu/Game_Menu.png" id="3_re47u"]
 [ext_resource type="Script" uid="uid://bujdjtd24da3g" path="res://scenes/levels/Menu.gd" id="4"]
 
 [node name="Menu" type="Control"]
@@ -29,29 +29,37 @@ expand_mode = 1
 stretch_mode = 7
 
 [node name="logo" type="TextureRect" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -236.0
-offset_top = -185.634
-offset_right = 237.0
-offset_bottom = -5.63416
-texture = ExtResource("2")
+offset_left = -1013.0
+offset_top = -457.0
+offset_right = -540.0
+offset_bottom = -277.00012
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.465, 4.465)
+texture = ExtResource("3_re47u")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="new_game" type="Button" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -57.5
-offset_top = 47.9168
-offset_right = 57.5
-offset_bottom = 96.9168
+offset_left = -13.0
+offset_top = 149.0
+offset_right = 102.06006
+offset_bottom = 199.59998
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../quit")
 focus_neighbor_top = NodePath("../quit")
 focus_neighbor_right = NodePath("../controls")
@@ -63,15 +71,19 @@ text = "New Game"
 flat = true
 
 [node name="continue" type="Button" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -50.5
-offset_top = 123.626
-offset_right = 50.5
-offset_bottom = 172.626
+offset_left = -171.99994
+offset_top = 336.0
+offset_right = -70.99994
+offset_bottom = 385.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../quit")
 focus_neighbor_top = NodePath("../new_game")
 focus_neighbor_right = NodePath("../controls")
@@ -84,15 +96,19 @@ text = "Continue"
 flat = true
 
 [node name="controls" type="Button" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -114.361
-offset_top = 234.378
-offset_right = -13.3615
-offset_bottom = 283.378
+offset_left = -381.0
+offset_top = 362.00006
+offset_right = -280.0005
+offset_bottom = 411.00006
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../quit")
 focus_neighbor_top = NodePath("../continue")
 focus_neighbor_right = NodePath("../quit")
@@ -103,13 +119,16 @@ text = "Controls"
 flat = true
 
 [node name="quit" type="Button" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 12.9543
-offset_top = -69.3568
-offset_right = 113.954
-offset_bottom = -20.3568
+offset_left = 21.0
+offset_top = -137.0
+offset_right = 121.9997
+offset_bottom = -88.0
+grow_vertical = 0
+scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../controls")
 focus_neighbor_top = NodePath("../continue")
 focus_neighbor_right = NodePath("../controls")

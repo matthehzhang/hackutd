@@ -17,7 +17,7 @@ func _ready():
 		# Wait a moment before starting cutscene
 		# Debugging purposes
 		print("started")
-		await get_tree().create_timer(0.5).timeout
+		await get_tree().create_timer(3).timeout
 		if auto_trigger_battle:
 			start_encounter()
 
@@ -46,7 +46,7 @@ func start_encounter():
 func show_pre_battle_dialogue():
 	# If you have a Dialogs system, use it here
 	# Example dialogue lines:
-	var dialogue = "H...h..ehehehe...     Is that cat flesh I smell? Dinner time! Dinner time! DINNER! DINNERDINNERDINNERDINNER"
+	var dialogue = "H...h..ehehehe...     Is that cat flesh I smell? Dinner time! Dinner time! DINNER!"
 
 	
 	# You'll need to adapt this to YOUR dialog system

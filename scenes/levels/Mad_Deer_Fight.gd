@@ -7,6 +7,8 @@ extends Node2D
 #@onready var player_health_bar = $UI/PlayerHealthBar
 @onready var battle_text = $UI/BattleText
 
+var serial_manager
+
 # QTE variables
 var qte_active = false
 var qte_start_time = 0.0
@@ -29,16 +31,19 @@ var defending = false
 
 func _ready():
 	# For debugging
+	serial_manager = get_node("SerialManager")
+	serial_manager.SendMessage("Hello ESP32!")
+	serial_manager.SendMessage("MOUNTAIN")
 	print("battle started")
 	# Load stats from Globals
 	player_hp = 100
 	player_max_hp = 100
 	player_atk = 10
 	
-	enemy_name = "Fox"
-	enemy_hp = 90
+	enemy_name = "The Mad Deer"
+	enemy_hp = 100
 	enemy_max_hp = 100
-	enemy_atk = 15
+	enemy_atk = 30
 	
 	# Setup UI
 	#player_health_bar.max_value = player_max_hp
@@ -47,8 +52,8 @@ func _ready():
 	#enemy_health_bar.value = enemy_hp
 	
 	# Start battle
-	show_message(enemy_name + " is looking at you with bloodlust.")
-	await get_tree().create_timer(1.5).timeout
+	show_message(enemy_name + " looks down at you.")
+	await get_tree().create_timer(3.0).timeout
 	while player_hp > 0 and enemy_hp > 0 and battle_active: 
 		await fight()
 
@@ -58,17 +63,14 @@ func show_message(text: String):
 func fight() -> void: 
 	var success = false
 	
-	if enemy_name == "Panther": 
-		show_message("Jump!")
-		# line to send code to C# to then send serial code to active Jump LED wave
-	if enemy_name == "Fox": 
-		show_message("fox attack")
 	if enemy_name == "The Mad Deer": 
-		show_message("Think fast and follow along!")
+		serial_manager.SendMessage("ATTACK1")
+		show_message("Think fast and follow the signs!")
 		# line to send code to C# to then send serial code to activate arrows 
 		# serial code should randomly choose one of the codes because ESP guy will make 
 		# 5 diff variations and we will cycle them randomly
 	success = await start_qte()
+	show_message("Wait...")
 	qte_max_time -= .01
 		
 	if not success: 
@@ -122,7 +124,7 @@ func start_qte():
 
 func win_battle():
 	battle_active = false
-	show_message("You saved " + enemy_name + "!")
+	show_message("You beat " + enemy_name + ".")
 	await get_tree().create_timer(2.0).timeout
 	
 	Globals.player_won_battle = true
@@ -136,21 +138,23 @@ func win_battle():
 		dialogue = "Fine. You win. But don't expect this to end. You heroes trample on the lives of people like me, without ever questioning why we turned to this life in the first place."
 		
 	Dialogs.show_dialog(dialogue, enemy_name)
-	await get_tree().create_timer(4.0).timeout
+	await Dialogs.dialog_ended
 	
 	# Raven thank you
 	if enemy_name == "Fox":
-		Dialogs.show_dialog("Fox is my best friend. Thank you for saving his life. Please let me repay the favor: I will take you to the top of the mountain where Mad Deer is!", "Raven")
-		await get_tree().create_timer(4.0).timeout
+		Dialogs.show_dialog("Fox is my best friend. Thank you for saving his life.", "Raven")
+		await Dialogs.dialog_ended
+		Dialogs.show_dialog("Please let me repay the favor: I will take you to the top of the mountain where Mad Deer is!", "Raven")
+		await Dialogs.dialog_ended
 
 	# Mad Deer monologue
 	if enemy_name == "The Mad Deer": 
 		Dialogs.show_dialog("The sheeple may call you a hero. But never forget: when we had to watch our brothers and sisters starve and our parents sell their lives just to send us to school, you were never once there.", "The Mad Deer")
-		await get_tree().create_timer(6.0).timeout
+		await Dialogs.dialogue_ended
 		Dialogs.show_dialog("You disgust me. This won't be the last you hear from me. And children all over our world will continue to become me. Because after all, ", "The Mad Deer")
-		await get_tree().create_timer(6.0).timeout
-		Dialogs.show_dialog("i f  y o u  d o n ' t  c h a n ge  t h e  d u m p s t e r,  t h e  t r a s h  w i l l  n e v e r  s t o p  r o t t i n g", "?")
-		
+		await Dialogs.dialog_ended
+		Dialogs.show_dialog("i f  y o u  d o n ' t  c h a n ge  t h e  d u m p s t e r,  t h e  t r a s h  w i l l   k e e p  r o t t i n g", "?")
+		show_message(" ... ")
 	return_to_scene(true)
 
 func lose_battle():
@@ -160,14 +164,13 @@ func lose_battle():
 	
 	Globals.player_won_battle = false
 	
-	Dialogs.show_dialog("Please...try again. We're in so much pain...", enemy_name)
+	Dialogs.show_dialog("Fool.", enemy_name)
 	
 	return_to_scene(false)
 
 func return_to_scene(won: bool):
 	# Return to the scene you came from
-	get_tree().change_scene_to_file(Globals.battle_return_scene)
-		
+	pass
 
 # Simple screen shake effect
 func shake_sprite(sprite: Node):

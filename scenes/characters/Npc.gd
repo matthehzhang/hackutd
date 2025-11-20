@@ -42,8 +42,9 @@ func _input(event):
 	
 	# If we reached here and there are generic dialogs to show, rotate among them
 	if not dialogs.is_empty():
-		Dialogs.show_dialog(dialogs[current_dialog], character_name)
-		current_dialog = wrapi(current_dialog + 1, 0, dialogs.size())
+		for dialog in dialogs:
+			Dialogs.show_dialog(dialog, character_name)
+			await Dialogs.dialog_ended
 		
 func _on_body_entered(body):
 	if body is Player:

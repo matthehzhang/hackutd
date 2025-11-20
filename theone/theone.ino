@@ -245,8 +245,8 @@ void setServoTargetsForMode(DisplayMode mode) {
       break;
       
     case MODE_ATTACK1:
-      setServoTarget(0, RIGHT_FLAT_ANGLE);
-      setServoTarget(1, LEFT_FLAT_ANGLE);
+      setServoTarget(0, RIGHT_90_ANGLE);
+      setServoTarget(1, LEFT_90_ANGLE);
       Serial.println("Servo targets: ATTACK1 (flat)");
       break;
       

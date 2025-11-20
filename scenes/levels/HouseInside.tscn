@@ -18,6 +18,8 @@ size = Vector2(1378.44, 314.398)
 script = ExtResource("1_pccjs")
 
 [node name="house_inside" type="Sprite2D" parent="."]
+position = Vector2(5, -2)
+scale = Vector2(0.485, 0.485)
 texture = ExtResource("2_pccjs")
 
 [node name="walls" type="StaticBody2D" parent="."]
@@ -43,7 +45,7 @@ position = Vector2(16.59033, -241.39001)
 shape = SubResource("3")
 
 [node name="Character" parent="." instance=ExtResource("5")]
-position = Vector2(4.19806, 260.181)
+position = Vector2(2, 284)
 facing = "up"
 
 [node name="music_track" parent="." instance=ExtResource("6")]

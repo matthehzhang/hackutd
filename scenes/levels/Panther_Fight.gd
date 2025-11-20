@@ -5,13 +5,15 @@ extends Node2D
 @onready var player = $Player
 #@onready var enemy_health_bar = $UI/EnemyHealthBar
 #@onready var player_health_bar = $UI/PlayerHealthBar
-@onready var battle_text = $BattleText
+@onready var battle_text = $UI/BattleText
+
+var serial_manager
 
 # QTE variables
 var qte_active = false
 var qte_start_time = 0.0
 var qte_min_time = 1.5  # Minimum time to wait
-var qte_max_time = 1.75  # Maximum time allowed
+var qte_max_time = 2.25  # Maximum time allowed
 var qte_success = false
 
 # Battle state
@@ -29,16 +31,18 @@ var defending = false
 
 func _ready():
 	# For debugging
+	serial_manager = get_node("SerialManager")
+	
 	print("battle started")
 	# Load stats from Globals
 	player_hp = 100
 	player_max_hp = 100
 	player_atk = 10
 	
-	enemy_name = "Fox"
-	enemy_hp = 90
-	enemy_max_hp = 100
-	enemy_atk = 15
+	enemy_name = "Panther"
+	enemy_hp = 60
+	enemy_max_hp = 60
+	enemy_atk = 30
 	
 	# Setup UI
 	#player_health_bar.max_value = player_max_hp
@@ -54,12 +58,15 @@ func _ready():
 
 func show_message(text: String):
 	battle_text.text = text
+	print("hello")
 
 func fight() -> void: 
 	var success = false
 	
 	if enemy_name == "Panther": 
 		show_message("Jump!")
+		serial_manager.SendMessage("ATTACK1")
+		#serial_manager.SendMessage("")
 		# line to send code to C# to then send serial code to active Jump LED wave
 	if enemy_name == "Fox": 
 		show_message("fox attack")
@@ -69,6 +76,8 @@ func fight() -> void:
 		# serial code should randomly choose one of the codes because ESP guy will make 
 		# 5 diff variations and we will cycle them randomly
 	success = await start_qte()
+	show_message("Wait...")
+
 	qte_max_time -= .01
 		
 	if not success: 
@@ -77,6 +86,9 @@ func fight() -> void:
 		shake_sprite(player)
 		player_hp -= enemy_atk
 		player_hp = max(0, player_hp)
+	else:
+		show_message("Dodge!")
+		print("Dodge!")
 	
 	#player_health_bar.value = player_hp
 	
@@ -129,13 +141,15 @@ func win_battle():
 	
 	var dialogue = ""
 	if enemy_name == "Panther": 
-		dialogue = "Hero...thank you for saving my life! But you still have a journey ahead of you. The Mad Deer will stop at nothing to annihilate this world. Head East: there is a cave where you shall continue your path."
+		dialogue = "Hero...thank you for saving my life! But you still have a journey ahead of you."
 	if enemy_name == "Fox": 
 		dialogue = "I don't know what came over me! I'm so upset I hurt Raven, one of my closest friends. Make sure you defeat the terrible deer."
 	if enemy_name == "The Mad Deer": 
 		dialogue = "Fine. You win. But don't expect this to end. You heroes trample on the lives of people like me, without ever questioning why we turned to this life in the first place."
 		
 	Dialogs.show_dialog(dialogue, enemy_name)
+	await Dialogs.dialog_ended
+	Dialogs.show_dialog("The Mad Deer will stop at nothing to annihilate this world. Head East: there is a cave where you shall continue your path.", enemy_name)
 	await get_tree().create_timer(4.0).timeout
 	
 	# Raven thank you

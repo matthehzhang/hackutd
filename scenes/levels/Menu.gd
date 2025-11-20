@@ -9,6 +9,9 @@ func _ready():
 	else:
 		$continue.disabled = true
 
+func _input(event):
+	if event is InputEventKey and event.pressed and not event.echo:
+		_on_new_game_pressed()
 
 func _on_continue_pressed():
 	Globals.load_game()
@@ -18,7 +21,6 @@ func _on_continue_pressed():
 	else:
 		push_error("Error: current_level shouldn't be empty")
 	pass # Replace with function body.
-
 
 func _on_new_game_pressed():
 	if initial_level != "":
