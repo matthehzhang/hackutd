@@ -1,6 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://damx5ema0gns7"]
+[gd_scene load_steps=14 format=3 uid="uid://damx5ema0gns7"]
 
-[ext_resource type="Script" uid="uid://cvd0ly18ijsjf" path="res://scenes/levels/outside.gd" id="1_h6l5i"]
+[ext_resource type="Script" path="res://scenes/levels/outside.gd" id="1_h6l5i"]
 [ext_resource type="PackedScene" uid="uid://deqgnj30xx13t" path="res://scenes/misc/UI.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://578yq1ifj1wm" path="res://textures/pj/frames/cave-entrance.png" id="4_e6b1c"]
 [ext_resource type="PackedScene" uid="uid://d1gup5fymhyr5" path="res://scenes/props/House.tscn" id="5"]
@@ -9,11 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://ctd3mgp0s172q" path="res://scenes/characters/Player.tscn" id="8"]
 [ext_resource type="TileSet" uid="uid://dou25et3eci8x" path="res://textures/props/forest_tileset.tres" id="8_e6b1c"]
 [ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="9_u4v50"]
-[ext_resource type="PackedScene" path="res://scenes/characters/Npc.tscn" id="13"]
-[ext_resource type="PackedScene" uid="uid://dwu2tlrkse1kh" path="res://scenes/misc/Quest.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://pwlg8dseag6p" path="res://scenes/characters/Npc.tscn" id="13"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4pt2u"]
-size = Vector2(4197.723, 378.0916)
+size = Vector2(2739, 236.0709)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7a0mr"]
 size = Vector2(4041, 341.0002)
@@ -45,7 +44,7 @@ text = "Press \"E\" to interact"
 
 [node name="Character" parent="level" instance=ExtResource("8")]
 z_index = 10
-position = Vector2(1004, 997)
+position = Vector2(908.00006, 1024)
 scale = Vector2(0.4, 0.4)
 
 [node name="house" parent="level" instance=ExtResource("5")]
@@ -63,7 +62,7 @@ z_index = 10
 position = Vector2(-0.095336914, 107.998535)
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="level/walls"]
-position = Vector2(2377.0952, 856.00146)
+position = Vector2(2317.1309, 675.50146)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_4pt2u")
 
@@ -72,8 +71,9 @@ position = Vector2(1371.0953, 1975.0015)
 shape = SubResource("RectangleShape2D_7a0mr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="level/walls"]
-position = Vector2(-118.90466, 893.00146)
+position = Vector2(-293.90466, 565.00146)
 rotation = 1.5707964
+scale = Vector2(2.815, 2.815)
 shape = SubResource("RectangleShape2D_4pt2u")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="level/walls"]

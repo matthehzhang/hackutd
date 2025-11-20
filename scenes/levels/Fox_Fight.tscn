@@ -1,24 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://duivq1ed82r0d"]
+[gd_scene load_steps=7 format=3 uid="uid://duivq1ed82r0d"]
 
-[ext_resource type="Script" uid="uid://bk6l4f8f7r3w0" path="res://scenes/levels/Fox_Fight.gd" id="1_8woks"]
+[ext_resource type="Script" uid="uid://bk6l4f8f7r3w0" path="res://scenes/levels/fox_fight.gd" id="1_8woks"]
 [ext_resource type="Texture2D" uid="uid://ckpqdioyttnr8" path="res://textures/pj/frames/cave.jpg" id="2_kt1dm"]
 [ext_resource type="Texture2D" uid="uid://5vhvshbs8vt6" path="res://textures/pj/frames/poyo_attack_idle.png" id="3_8o1oe"]
 [ext_resource type="Texture2D" uid="uid://382hbkrj4qx8" path="res://textures/pj/frames/fox.png" id="4_13kly"]
 [ext_resource type="PackedScene" uid="uid://b736ohr7nhj2e" path="res://scenes/misc/Dialog_box.tscn" id="5_8o1oe"]
+[ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="6_13kly"]
 
 [node name="FoxFight" type="Node2D"]
 script = ExtResource("1_8woks")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(586, 328)
-scale = Vector2(0.61, 0.61)
+position = Vector2(964, 600)
+scale = Vector2(1.14, 1.14)
 texture = ExtResource("2_kt1dm")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(168, 498)
-scale = Vector2(0.625, 0.625)
+position = Vector2(265, 845)
 texture = ExtResource("3_8o1oe")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
@@ -26,8 +26,8 @@ texture = ExtResource("3_8o1oe")
 [node name="Enemy" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy"]
-position = Vector2(743, 243)
-scale = Vector2(1.76, 1.76)
+position = Vector2(1307, 398)
+scale = Vector2(2.75, 2.75)
 texture = ExtResource("4_13kly")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
@@ -57,12 +57,15 @@ offset_top = 28.0
 offset_right = 23.68
 offset_bottom = 50.32
 scale = Vector2(2.02, 2.02)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 32
 metadata/_edit_use_anchors_ = true
 
 [node name="Dialog_box" parent="." instance=ExtResource("5_8o1oe")]
 z_index = 2
-offset_left = 8.0
-offset_top = 399.0
-offset_right = 1146.0
-offset_bottom = 697.0
+offset_left = 452.0
+offset_top = 862.0
+offset_right = 1590.0
+offset_bottom = 1160.0
+
+[node name="SerialManager" type="Node" parent="."]
+script = ExtResource("6_13kly")

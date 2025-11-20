@@ -1,24 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7rsrpqmxa482"]
+[gd_scene load_steps=7 format=3 uid="uid://fhovarmi8si2"]
 
 [ext_resource type="Script" uid="uid://baaqychne4lfw" path="res://scenes/levels/Mad_Deer_Fight.gd" id="1_3bhjj"]
 [ext_resource type="Texture2D" uid="uid://bnnqexda7pijb" path="res://textures/pj/frames/mountain.jpg" id="2_pggh1"]
 [ext_resource type="Texture2D" uid="uid://5vhvshbs8vt6" path="res://textures/pj/frames/poyo_attack_idle.png" id="3_kkcmk"]
 [ext_resource type="Texture2D" uid="uid://bqb168be3ydqk" path="res://textures/pj/frames/maddeer.png" id="4_onkwn"]
 [ext_resource type="PackedScene" uid="uid://b736ohr7nhj2e" path="res://scenes/misc/Dialog_box.tscn" id="5_kkcmk"]
+[ext_resource type="Script" uid="uid://bldd82pkillbd" path="res://scenes/levels/SerialManager.cs" id="6_onkwn"]
 
 [node name="MadDeerFight" type="Node2D"]
 script = ExtResource("1_3bhjj")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(586, 328)
-scale = Vector2(0.61, 0.61)
+position = Vector2(1025, 604)
+scale = Vector2(1.215, 1.215)
 texture = ExtResource("2_pggh1")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(591, 672)
-scale = Vector2(0.625, 0.625)
+position = Vector2(988, 1031)
+scale = Vector2(1.03, 1.03)
 texture = ExtResource("3_kkcmk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
@@ -26,8 +27,8 @@ texture = ExtResource("3_kkcmk")
 [node name="Enemy" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy"]
-position = Vector2(612, 246)
-scale = Vector2(0.395, 0.395)
+position = Vector2(998.99994, 389)
+scale = Vector2(0.53, 0.53)
 texture = ExtResource("4_onkwn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
@@ -57,12 +58,16 @@ offset_top = 56.0
 offset_right = 53.68
 offset_bottom = 78.32
 scale = Vector2(2.02, 2.02)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 32
 metadata/_edit_use_anchors_ = true
 
 [node name="Dialog_box" parent="." instance=ExtResource("5_kkcmk")]
 z_index = 2
-offset_left = 8.0
-offset_top = 399.0
-offset_right = 1146.0
-offset_bottom = 697.0
+offset_left = 346.00003
+offset_top = 771.0
+offset_right = 1484.0
+offset_bottom = 1069.0
+scale = Vector2(1.185, 1.185)
+
+[node name="SerialManager" type="Node" parent="."]
+script = ExtResource("6_onkwn")

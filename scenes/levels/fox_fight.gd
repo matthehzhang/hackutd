@@ -7,11 +7,13 @@ extends Node2D
 #@onready var player_health_bar = $UI/PlayerHealthBar
 @onready var battle_text = $UI/BattleText
 
+var serial_manager
+
 # QTE variables
 var qte_active = false
 var qte_start_time = 0.0
 var qte_min_time = 1.5  # Minimum time to wait
-var qte_max_time = 1.75  # Maximum time allowed
+var qte_max_time = 2  # Maximum time allowed
 var qte_success = false
 
 # Battle state
@@ -29,6 +31,9 @@ var defending = false
 
 func _ready():
 	# For debugging
+	serial_manager = get_node("SerialManager")
+	serial_manager.SendMessage("Hello ESP32!")
+	serial_manager.SendMessage("STONE_WALL")
 	print("battle started")
 	# Load stats from Globals
 	player_hp = 100
@@ -60,7 +65,8 @@ func fight() -> void:
 	
 	if enemy_name == "Fox": 
 		show_message("Block when he gets close!")
-	
+	serial_manager.SendMessage("ATTACK1")
+
 	success = await start_qte()
 	show_message("Wait...")
 	qte_max_time -= .01
@@ -130,11 +136,13 @@ func win_battle():
 		dialogue = "Fine. You win. But don't expect this to end. You heroes trample on the lives of people like me, without ever questioning why we turned to this life in the first place."
 		
 	Dialogs.show_dialog(dialogue, enemy_name)
+	await Dialogs.dialog_ended
 	await get_tree().create_timer(4.0).timeout
 	
 	# Raven thank you
 	if enemy_name == "Fox":
 		Dialogs.show_dialog("Fox is my best friend. Thank you for saving his life. Please let me repay the favor: I will take you to the top of the mountain where Mad Deer is!", "Raven")
+		await Dialogs.dialog_ended
 		await get_tree().create_timer(4.0).timeout
 
 	# Mad Deer monologue

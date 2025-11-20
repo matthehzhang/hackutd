@@ -16,3 +16,12 @@ res://scenes/levels/fox_fight.gd
 res://scenes/levels/Menu.gd
 res://scenes/levels/Mountain.gd
 res://scenes/levels/Raven.gd
+res://scenes/levels/Fox_Fight.tscn
+res://scenes/levels/Mountain.tscn
+res://scenes/levels/Mad_Deer_Fight.tscn
+res://scenes/levels/Raven.tscn
+res://scenes/levels/HouseInside.tscn
+res://scenes/characters/Npc.gd
+res://scenes/levels/Menu.tscn
+res://scenes/levels/Controls.tscn
+res://scenes/levels/Outside.tscn

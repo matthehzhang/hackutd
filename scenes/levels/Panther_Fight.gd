@@ -13,7 +13,7 @@ var serial_manager
 var qte_active = false
 var qte_start_time = 0.0
 var qte_min_time = 1.5  # Minimum time to wait
-var qte_max_time = 1.75  # Maximum time allowed
+var qte_max_time = 2.25  # Maximum time allowed
 var qte_success = false
 
 # Battle state
@@ -66,7 +66,7 @@ func fight() -> void:
 	if enemy_name == "Panther": 
 		show_message("Jump!")
 		serial_manager.SendMessage("ATTACK1")
-		serial_manager.SendMessage("")
+		#serial_manager.SendMessage("")
 		# line to send code to C# to then send serial code to active Jump LED wave
 	if enemy_name == "Fox": 
 		show_message("fox attack")

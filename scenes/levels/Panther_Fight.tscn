@@ -11,15 +11,15 @@
 script = ExtResource("1_fxr0u")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(575.5, 326.5)
-scale = Vector2(0.605, 0.605)
+position = Vector2(954.99994, 589)
+scale = Vector2(1.165, 1.165)
 texture = ExtResource("3_fotij")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(176, 477.00003)
-scale = Vector2(0.65, 0.65)
+position = Vector2(207, 833.99994)
+scale = Vector2(1.12, 1.12)
 texture = ExtResource("4_72rya")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
@@ -28,8 +28,8 @@ texture = ExtResource("4_72rya")
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy"]
 z_index = 1
-position = Vector2(782.0001, 294)
-scale = Vector2(1.36, 1.36)
+position = Vector2(1333, 449)
+scale = Vector2(2.155, 2.155)
 texture = ExtResource("2_txhbe")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
@@ -55,14 +55,16 @@ offset_top = 24.0
 offset_right = 74.0
 offset_bottom = 47.0
 scale = Vector2(2.03, 2.03)
+theme_override_font_sizes/font_size = 32
 metadata/_edit_use_anchors_ = true
 
 [node name="Dialog_box" parent="." instance=ExtResource("5_fotij")]
 z_index = 2
-offset_left = 8.0
-offset_top = 399.0
-offset_right = 1146.0
-offset_bottom = 697.0
+offset_left = 388.00003
+offset_top = 828.0
+offset_right = 1526.0
+offset_bottom = 1126.0
+scale = Vector2(1.15, 1.15)
 
 [node name="SerialManager" type="Node" parent="."]
 script = ExtResource("6_72rya")

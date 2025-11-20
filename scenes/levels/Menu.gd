@@ -9,6 +9,10 @@ func _ready():
 	else:
 		$continue.disabled = true
 
+func _input(event):
+	if event is InputEventKey and event.pressed and not event.echo:
+		_on_new_game_pressed()
+
 func _on_continue_pressed():
 	Globals.load_game()
 	if Globals.current_level != "":

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://8uyfh2gobn2r"]
+[gd_scene load_steps=5 format=3 uid="uid://2swjyg8aa3kg"]
 
 [ext_resource type="Script" uid="uid://bgln87r1533hn" path="res://scenes/levels/Mountain.gd" id="1_urvnr"]
 [ext_resource type="Texture2D" uid="uid://bnnqexda7pijb" path="res://textures/pj/frames/mountain.jpg" id="2_bu8yr"]
@@ -9,14 +9,14 @@
 script = ExtResource("1_urvnr")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(586, 328)
-scale = Vector2(0.61, 0.61)
+position = Vector2(966.00006, 575)
+scale = Vector2(1.15, 1.15)
 texture = ExtResource("2_bu8yr")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(591, 672)
+position = Vector2(1024, 972)
 scale = Vector2(0.625, 0.625)
 texture = ExtResource("3_6bc62")
 
@@ -24,7 +24,8 @@ texture = ExtResource("3_6bc62")
 
 [node name="Dialog_box" parent="." instance=ExtResource("4_bu8yr")]
 z_index = 2
-offset_left = 8.0
-offset_top = 399.0
-offset_right = 1146.0
-offset_bottom = 697.0
+offset_left = 403.0
+offset_top = 832.0
+offset_right = 1541.0
+offset_bottom = 1130.0
+scale = Vector2(1.19, 1.19)
